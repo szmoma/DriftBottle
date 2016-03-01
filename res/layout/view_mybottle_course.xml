@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical" >
+
+            <com.hnmoma.driftbottle.custom.CircularImage
+                android:id="@+id/iv_userhead"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:adjustViewBounds="true"
+                android:onClick="onClick"
+                android:src="@drawable/default_avatar" />
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="40dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:maxLength="3"
+                android:singleLine="true"
+                android:text=""
+                android:textColor="#9d7e6c"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/view_gap"
+            android:layout_toRightOf="@id/ll_content"
+            android:layout_width="15dp"
+            android:layout_height="0.8dp"
+            android:layout_marginTop="25dp"
+            android:background="#9d7e6c" />
+    </RelativeLayout>
+
+</LinearLayout>

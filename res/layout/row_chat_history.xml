@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:id="@+id/list_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/selector_concern_bg"
+        android:gravity="center_vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/avatar_container"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="4dp"
+            android:layout_alignParentLeft="true" >
+
+            <com.hnmoma.driftbottle.custom.CircularImage
+                android:id="@+id/avatar"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/unread_msg_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/msg_red_circle"
+                android:gravity="center"
+                android:layout_marginLeft="2dp"
+                android:visibility="visible"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/avatar_container"
+            android:ellipsize="end"
+            android:maxEms="9"
+            android:singleLine="true"
+            android:textColor="#333333"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="8dp"
+            android:textColor="#999999"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:id="@+id/msg_state"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@id/name"
+            android:layout_marginBottom="7dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/avatar_container"
+            android:src="@drawable/msg_state_fail_resend"
+            android:visibility="gone" />
+
+        <com.way.ui.emoji.EmojiTextView
+            android:id="@+id/message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_toRightOf="@id/msg_state"
+            android:layout_toLeftOf="@id/time"
+            android:layout_marginRight="4dp"
+            android:minHeight="24dp"
+             android:layout_marginLeft="8dp"
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:lineSpacingExtra="2dp"
+            android:lineSpacingMultiplier="1.2"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_checkbg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/delbg"
+        android:visibility="gone"
+        android:layout_margin="0.5dp" >
+
+        <CheckBox
+            android:id="@+id/cb_check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:button="@drawable/selector_delcb"
+            android:clickable="false"
+            android:focusable="false"
+            android:focusableInTouchMode="false" />
+    </RelativeLayout>
+
+</FrameLayout>

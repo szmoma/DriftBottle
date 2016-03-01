@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bottle_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:padding="10dp" >
+
+        <com.way.ui.emoji.EmojiTextView
+            android:id="@+id/tv_cnt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:lineSpacingExtra="3dp"
+            android:textColor="#666666"
+            android:text="十万个为什么"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            app:isDynamic="false" />
+
+        <!-- 分享后见的答案 -->
+
+        <TextView
+            android:id="@+id/tv_da"
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_cnt"
+            android:layout_marginTop="10dp"
+            android:lineSpacingExtra="3dp"
+            android:text="@string/tip_answer"
+            android:textColor="#999999"
+            android:textIsSelectable="true"
+            android:textSize="13sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

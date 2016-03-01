@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_top"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:textColor="#545454"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_center"
+                android:orientation="vertical" >
+
+                <include layout="@layout/view_bottlehead" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#f0f3f3" />
+
+                <FrameLayout
+                    android:id="@+id/ll_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <FrameLayout
+                        android:id="@+id/view_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:scaleType="centerCrop" />
+
+                        <com.way.ui.emoji.EmojiTextView
+                            android:id="@+id/tv_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="@drawable/card_desc_bg"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:maxLines="3"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="2dp"
+                            android:paddingTop="2dp"
+                            android:textColor="#ffffff"
+                            android:textSize="12sp" />
+
+                        <LinearLayout
+                            android:id="@+id/ll_voice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@drawable/card_voiceplaybg"
+                            android:gravity="center"
+                            android:paddingBottom="3dp"
+                            android:paddingRight="8dp"
+                            android:paddingTop="3dp" >
+
+                            <ImageButton
+                                android:id="@+id/ib_play"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginRight="5dp"
+                                android:background="@null"
+                                android:src="@drawable/chatfrom_voice_playing"
+                                android:visibility="visible" />
+
+                            <TextView
+                                android:id="@+id/tv_cd"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="0&apos;&apos;"
+                                android:textColor="#ffffff"
+                                android:textSize="12sp" />
+                        </LinearLayout>
+
+                        <ProgressBar
+                            android:id="@+id/loading"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:indeterminateDrawable="@drawable/progress_blue"
+                            android:visibility="gone" />
+                    </FrameLayout>
+
+                    <com.way.ui.emoji.EmojiTextView
+                        android:id="@+id/view_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="3dp"
+                        android:maxHeight="200dp"
+                        android:minHeight="80dp"
+                        android:padding="5dp"
+                        android:scrollbarSize="3dp"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:scrollbarThumbVertical="@color/scrollbarbg"
+                        android:scrollbars="vertical"
+                        android:textColor="#666666"
+                        android:textIsSelectable="true"
+                        android:textSize="18sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#f0f3f3" />
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/card_bottom"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_left"
+                    android:padding="10dp"
+                    android:text="扔掉"
+                    android:textColor="#8b8b8b"
+                    android:textSize="19sp" />
+
+                <View
+                    android:layout_width="0.7dp"
+                    android:layout_height="match_parent"
+                    android:background="#d9d9d9" />
+
+                <Button
+                    android:id="@+id/bt_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_right"
+                    android:padding="10dp"
+                    android:text="聊天"
+                    android:textColor="#0daef2"
+                    android:textSize="19sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_throw"
+        android:visibility="gone" />
+
+</LinearLayout>

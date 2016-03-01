@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/shape_top_bar" >
+
+        <ImageButton
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:background="@color/transparent"
+            android:padding="2dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/title_btn_back" />
+
+        <ImageButton
+            android:id="@+id/ib_show_gride"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/transparent"
+            android:scaleType="centerInside"
+            android:src="@android:drawable/ic_dialog_dialer"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tv_album"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.0" >
+
+        <RelativeLayout
+            android:id="@id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true"
+            android:background="#333333" >
+
+            <ImageView
+                android:id="@id/iv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop" />
+
+            <ImageButton
+                android:id="@id/ib_add"
+                style="@style/btn_recharge"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_input_add" />
+
+            <TextView
+                android:id="@id/tv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="4dp"
+                android:layout_toLeftOf="@id/ib_add"
+                android:layout_toRightOf="@id/iv_vip"
+                android:textColor="#fcfcfc" />
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshGridView
+            android:id="@+id/wgv_photots"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/rl_bottom"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:gravity="center"
+            android:horizontalSpacing="20dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="3"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dp" />
+
+        <include
+            android:id="@id/no_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/no_message"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

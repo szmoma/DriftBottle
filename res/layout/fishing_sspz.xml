@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_top"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="评论瓶"
+                android:textColor="#545454"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_center"
+                android:orientation="vertical" >
+
+                <include layout="@layout/view_bottlehead" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="#f0f3f3" />
+
+                <FrameLayout
+                    android:id="@+id/ll_center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <RelativeLayout
+                        android:id="@+id/view_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" >
+
+                        <ImageView
+                            android:id="@+id/iv"
+                            android:layout_width="match_parent"
+                            android:layout_height="150dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/card_def" />
+
+                        <com.way.ui.emoji.EmojiTextView
+                            android:id="@+id/tv_desc"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv"
+                            android:background="@color/white"
+                            android:ellipsize="end"
+                            android:gravity="center_vertical"
+                            android:lineSpacingExtra="3dp"
+                            android:minHeight="32dp"
+                            android:maxLines="3"
+                            android:paddingBottom="2dp"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="2dp"
+                            android:paddingTop="2dp"
+                            android:text="十万个为什么"
+                            android:textColor="#666666"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+
+                    <com.way.ui.emoji.EmojiTextView
+                        android:id="@+id/view_two"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:lineSpacingExtra="3dp"
+                        android:maxHeight="200dp"
+                        android:minHeight="80dp"
+                        android:padding="5dp"
+                        android:scrollbarSize="3dp"
+                        android:scrollbarStyle="outsideOverlay"
+                        android:scrollbarThumbVertical="@color/scrollbarbg"
+                        android:scrollbars="vertical"
+                        android:text=""
+                        android:textColor="#333439"
+                        android:textIsSelectable="true"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+                </FrameLayout>
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#f0f3f3" />
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/card_bottom"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_01"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_left"
+                    android:padding="10dp"
+                    android:text="扔掉"
+                    android:textColor="#8b8b8b"
+                    android:textSize="19sp" />
+
+                <View
+                    android:layout_width="0.7dp"
+                    android:layout_height="match_parent"
+                    android:background="#d9d9d9" />
+
+                <Button
+                    android:id="@+id/bt_02"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_right"
+                    android:padding="10dp"
+                    android:text="评论"
+                    android:textColor="#0daef2"
+                    android:textSize="19sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_throw"
+        android:visibility="gone" />
+
+</LinearLayout>

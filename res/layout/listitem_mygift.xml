@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="4dp"
+    android:background="@drawable/listview_comment_item"
+    android:padding="8dp" >
+
+    <ImageView
+        android:id="@+id/iv_pic"
+        android:layout_width="50dp"
+        android:layout_centerVertical="true"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        android:layout_alignParentLeft="true"
+        android:adjustViewBounds="true"
+        android:background="@drawable/avatar_default" />
+    
+
+    <TextView
+        android:id="@+id/tv_giftname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_pic"
+        android:ellipsize="end"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:singleLine="true"
+        android:text="圣诞节礼券"
+        android:textColor="#666666"
+        android:textSize="15sp" />
+    
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+         android:layout_below="@id/tv_giftname"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="4dp"
+        android:gravity="center"
+        android:text="12月12日"
+        android:textColor="#999999"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_giftname"
+        android:layout_toRightOf="@id/iv_pic"
+        android:layout_toLeftOf="@id/tv_date"
+        android:layout_marginTop="4dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="订单完成！"
+        android:textColor="#bababa"
+        android:textSize="14sp" />
+
+    <View
+        android:id="@+id/intervalline"
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_below="@id/tv_result"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="7dp"
+        android:layout_toRightOf="@id/iv_pic"
+        android:background="#e1e1e1" />
+
+</RelativeLayout>

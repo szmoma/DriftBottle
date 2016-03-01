@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/my_bottle_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/shape_top_bar" >
+
+        <ImageButton
+            android:id="@+id/my_bottle_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:src="@drawable/title_btn_back" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:onClick="onClick"
+            android:text="标记的人"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <LinearLayout
+            android:id="@+id/ll_mbmg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#efefef"
+            android:orientation="horizontal"
+            android:padding="15dp"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:onClick="onClick"
+                android:text="取 消"
+                android:textColor="@color/activity_concern_bottom"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/btn_del"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:onClick="onClick"
+                android:text="删 除"
+                android:textColor="@color/activity_concern_bottom"
+                android:textSize="19sp" />
+
+            <Button
+                android:id="@+id/my_bottle_mng"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:onClick="onClick"
+                android:text="清 空"
+                android:textColor="@color/activity_concern_bottom"
+                android:textSize="19sp" />
+        </LinearLayout>
+
+        <include
+            android:id="@id/no_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/no_message"
+            android:visibility="gone" />
+        
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_mbmg"
+            android:background="#ffffff"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@color/transparent"
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/sc" />
+        
+    </RelativeLayout>
+
+</LinearLayout>

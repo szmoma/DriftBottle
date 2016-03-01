@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/comment_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:padding="5dp"
+    android:visibility="gone" >
+
+    <ImageButton
+        android:id="@+id/bt_return"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerInParent="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:padding="5dp"
+        android:src="@drawable/selector_comment_back" />
+
+    <RelativeLayout
+        android:id="@+id/ll_pb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <ImageButton
+            android:id="@+id/bt_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@null"
+            android:padding="5dp"
+            android:src="@drawable/selector_comment_ok"
+            android:visibility="visible" />
+
+        <ProgressBar
+            android:id="@+id/footview"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:indeterminateDrawable="@drawable/progress_blue"
+            android:padding="7dp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/et_comments"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@id/ll_pb"
+        android:layout_toRightOf="@id/bt_return"
+        android:background="@drawable/commentbg"
+        android:gravity="left|top"
+        android:imeActionLabel="完成"
+        android:inputType="textMultiLine"
+        android:maxLength="57"
+        android:maxLines="3"
+        android:padding="5dp"
+        android:text=""
+        android:textColor="#414141"
+        android:textSize="16sp" />
+
+</RelativeLayout>

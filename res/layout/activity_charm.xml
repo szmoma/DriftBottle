@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/shape_top_bar" >
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_btn_back"
+            android:gravity="center_vertical"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/tv_charm_Mall"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+
+        <TextView
+            android:id="@+id/tv_rechange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="8dp"
+            android:clickable="true"
+            android:gravity="center"
+            android:minHeight="32dp"
+            android:onClick="onClick"
+            android:padding="8dp"
+            android:text="@string/tip_trainslate_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_setting" />
+    </RelativeLayout>
+
+    <!-- 信息主体 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#f8f8f8"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:padding="8dp" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:text="@string/tv_my_coupons"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_mycoupon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="#eb9308"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="@string/tv_translatable_charm"
+                android:textColor="#666666"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_mycharmvalue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="4dp"
+                android:singleLine="true"
+                android:text="0"
+                android:textColor="#eb9308"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/gray" />
+
+        <RelativeLayout
+            android:id="@id/rl_myGift"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/selector_btn_function2"
+            android:descendantFocusability="blocksDescendants"
+            android:onClick="onClick"
+            android:padding="8dp" >
+
+            <ImageView
+                android:id="@id/ic_gift"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:maxHeight="32dp"
+                android:maxWidth="32dp"
+                android:padding="2dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/mlsc_gift" />
+
+            <ImageView
+                android:id="@id/iv_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="8dp"
+                android:src="@drawable/icon_arrow_translate" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_toLeftOf="@id/iv_arrow"
+                android:layout_toRightOf="@id/ic_gift"
+                android:gravity="center_vertical"
+                android:minHeight="28dp"
+                android:text="@string/tv_myGift"
+                android:textColor="#666666"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.0dp"
+            android:background="@color/gray" />
+
+        <GridView
+            android:id="@+id/giftlist"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:horizontalSpacing="15dp"
+            android:listSelector="@null"
+            android:numColumns="3"
+            android:padding="6dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="20dp" />
+    </LinearLayout>
+
+</LinearLayout>

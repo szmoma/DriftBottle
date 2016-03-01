@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.hnmoma.driftbottle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/shape_top_bar" >
+
+        <Button
+            android:id="@id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_btn_back" />
+
+        <ImageView
+            android:id="@id/iv_shop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/selector_btn_shopcar" />
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f2f2f2"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rectangle2"
+                android:orientation="vertical"
+                android:padding="4dp" >
+
+                <RelativeLayout
+                    android:id="@id/rl_vip"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@id/iv_vip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_vip_big" />
+
+                    <TextView
+                        android:id="@id/tv_vip_state"
+                        style="@style/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/vip_state_off" />
+
+                    <TextView
+                        android:id="@id/tv_vip"
+                        style="@style/tv_grade_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv_vip_state"
+                        android:layout_toRightOf="@id/iv_vip"
+                        android:text="VIP" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#dfdfdf" />
+
+                <RelativeLayout
+                    android:id="@id/rl_charm"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@id/iv_charm"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_charm_big" />
+
+                    <TextView
+                        android:id="@id/tv_charm"
+                        style="@style/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@id/tv_charm_label"
+                        style="@style/tv_grade_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv_charm"
+                        android:layout_toRightOf="@id/iv_charm"
+                        android:text="@string/charm" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#dfdfdf" />
+
+                <RelativeLayout
+                    android:id="@id/rl_wealth"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@id/iv_wealth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_wealth_big" />
+
+                    <TextView
+                        android:id="@id/tv_wealth"
+                        style="@style/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@id/tv_wealth_label"
+                        style="@style/tv_grade_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv_wealth"
+                        android:layout_toRightOf="@id/iv_wealth"
+                        android:text="@string/wealth" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#dfdfdf" />
+
+                <RelativeLayout
+                    android:id="@id/rl_love"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@id/iv_love"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_love_big" />
+
+                    <TextView
+                        android:id="@id/tv_love"
+                        style="@style/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@id/tv_love_label"
+                        style="@style/tv_grade_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv_love"
+                        android:layout_toRightOf="@id/iv_love"
+                        android:text="@string/love" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#dfdfdf" />
+
+                <RelativeLayout
+                    android:id="@id/rl_game"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@id/iv_game"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/ic_game_big" />
+
+                    <TextView
+                        android:id="@id/tv_game"
+                        style="@style/tv_grade"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@id/tv_game_label"
+                        style="@style/tv_grade_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@id/tv_game"
+                        android:layout_toRightOf="@id/iv_game"
+                        android:text="@string/game_vs" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.8dp"
+                    android:layout_marginLeft="20dp"
+                    android:background="#dfdfdf" />
+
+                <RelativeLayout
+                    android:id="@id/rl_grade"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="20dp"
+                    android:clickable="true"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@id/tv_level"
+                        style="@style/tv_grade_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="LV.1" />
+
+                    <com.hnmoma.driftbottle.custom.PropsTextProgressBar
+                        android:id="@id/pb_grade"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="8dp"
+                        android:layout_toRightOf="@id/tv_level"
+                        android:max="100"
+                        android:progress="10"
+                        android:progressDrawable="@drawable/progress_grade_bg"
+                        android_custom:textColor="#ffa039" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/rectangle2"
+                android:orientation="vertical"
+                android:paddingBottom="10dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:paddingTop="4dp" >
+
+                <WebView
+                    android:id="@+id/web_level_detail"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:overScrollMode="never" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

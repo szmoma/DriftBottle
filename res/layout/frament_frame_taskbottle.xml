@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp" >
+
+    <LinearLayout
+        android:id="@+id/rl_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/listitem_mb_n"
+        android:orientation="vertical"
+        android:padding="5dp" >
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" 
+            android:minHeight="250dp">
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/voicebg" />
+
+            <com.way.ui.emoji.EmojiTextView
+                android:id="@+id/tv_cnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#b2ffffff"
+                android:ellipsize="end"
+                android:maxLines="3"
+                android:text="万水千山总是情，给个好评行不行！好评立即获取系统奖励"
+                android:textColor="#303438"
+                android:textSize="15sp"
+                app:isDynamic="false"/>
+
+            <Button
+                android:id="@+id/bt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="开始任务"
+                android:textColor="#2a2a2a"
+                android:textSize="16sp"
+                android:padding="8dp"
+                android:drawableLeft="@drawable/task_start"
+                android:drawablePadding="3dp"
+                android:background="@drawable/selector_throw_btn"/>
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

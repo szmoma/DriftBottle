@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/shape_top_bar"  >
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_btn_back"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="道具详情"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp" >
+
+       <ImageView
+            android:id="@+id/iv_dj"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/defalutimg" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tv_djName"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textSize="16sp"
+                android:textColor="#4b5054"
+                android:text="名字" />
+
+            <TextView
+                android:id="@+id/tv_djCount"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="left|center_vertical"
+                android:textSize="13sp"
+                android:textColor="#87888a"
+                android:text="剩余：30个" />
+        </LinearLayout>
+    </LinearLayout>
+    
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:background="@drawable/set_line" />
+
+    <TextView
+        android:id="@+id/tv_djDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e8e9eb"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:text="使用功能说明"
+        android:textColor="#87888a"/>
+    
+    <Button 
+        android:id="@+id/bt_dj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="15dp"
+        android:onClick="onClick"
+        android:padding="5dp"
+        android:visibility="gone"
+        android:background="@drawable/selector_djdetail_buy"
+        android:textColor="@color/white"
+        android:text="使用道具"/>
+</LinearLayout>

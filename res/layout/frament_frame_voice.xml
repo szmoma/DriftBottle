@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@color/white"
+        android:orientation="vertical" >
+
+        <include layout="@layout/view_bottle_head" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="2dp" >
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:minHeight="185dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/voicebg" />
+
+            <com.way.ui.emoji.EmojiTextView
+                android:id="@+id/tv_cnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="#b2ffffff"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3dp"
+                android:maxLines="2"
+                android:minHeight="32dp"
+                android:padding="3dp"
+                android:textColor="#41413f"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:isDynamic="false" />
+
+            <ImageButton
+                android:id="@+id/ib_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/voiceplaybg"
+                android:src="@drawable/chatfrom_voice_playing"
+                android:visibility="visible" />
+
+            <!-- <ProgressBar -->
+            <!-- android:id="@+id/loading" -->
+            <!-- style="?android:attr/progressBarStyleSmall" -->
+            <!-- android:layout_width="wrap_content" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:visibility="visible" -->
+            <!-- android:indeterminate="false" -->
+            <!-- android:indeterminateDrawable="@drawable/dialog_style_xml_color" -->
+            <!-- android:layout_gravity="center"/> -->
+
+            <ProgressBar
+                android:id="@+id/loading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/progress_blue_big"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

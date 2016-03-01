@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_guide_bg" >
+
+    <ImageView
+        android:id="@+id/iv_balloon_p"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_guide_balloon_n" />
+
+    <ImageView
+        android:id="@+id/iv_prop_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="40dp"
+        android:minHeight="40dp"
+        android:minWidth="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_guide_prop_n"
+        android:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/iv_user_n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent"
+        android:minHeight="96dp"
+        android:minWidth="96dp"
+        android:src="@drawable/ic_guide_center" />
+
+    <RelativeLayout
+        android:id="@+id/guide_start"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_guide1"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <Button
+            android:id="@+id/btn_start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="80dp"
+            android:background="@drawable/selector_btn_guide"
+            android:gravity="center"
+            android:text="开始新手教程"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/guide_midle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_guide_bottle"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/iv_other_beach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/ic_guide_other_beach"
+        android:orientation="vertical"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/guide_end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="#99000000"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@id/iv_balloon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:minHeight="50dp"
+                android:minWidth="50dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_guide_balloon_p" />
+
+            <ImageView
+                android:id="@id/iv_prop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="40dp"
+                android:minHeight="40dp"
+                android:minWidth="40dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_guide_prop_p"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:background="@color/transparent"
+                android:src="@drawable/ic_guide_ok"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/main_kj_new"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom"
+            android:background="@color/transparent"
+            android:minHeight="96dp"
+            android:minWidth="96dp"
+            android:src="@drawable/ic_guide_center"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/iv_center_tip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/main_kj_new"
+            android:layout_alignParentLeft="true"
+            android:layout_gravity="bottom"
+            android:layout_marginBottom="-20dp"
+            android:layout_marginLeft="60dp"
+            android:background="@color/transparent"
+            android:src="@drawable/ic_guide_center_tip"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

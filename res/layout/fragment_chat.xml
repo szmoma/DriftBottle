@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rl_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bigbg" >
+
+        <RelativeLayout
+            android:id="@+id/my_bottle_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:background="@drawable/shape_top_bar"  >
+
+            <Button
+                android:id="@+id/my_bottle_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/title_btn_back"/>
+
+            <Button
+                android:id="@+id/bt_share"
+                android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentRight="true"
+	            android:layout_centerVertical="true"
+	            android:layout_marginRight="10dp"
+	            android:background="@drawable/title_btn_share"/>
+            
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/bt_share"
+                android:layout_toRightOf="@id/my_bottle_back"
+                android:gravity="center"
+                android:text=""
+                android:singleLine="true"
+                android:ellipsize="end"
+                android:textColor="#333333"
+                android:textSize="24sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#F4F4F4"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/mb_bottombg">
+                <RelativeLayout
+                    android:id="@+id/ll_pb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true" >
+
+                    <ImageView
+                        android:id="@+id/bt_send"
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_centerInParent="true"
+                        android:src="@drawable/selector_send"
+                        android:background="@null"
+                        android:visibility="visible" />
+
+                    <ProgressBar
+                        android:id="@+id/footview"
+                        style="?android:attr/progressBarStyleSmallInverse"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:padding="10dp"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/bt_emoji"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:onClick="onClick"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    android:background="@null"
+                    android:src="@drawable/selector_emoji" />
+
+                <com.way.ui.emoji.EmojiEditText
+                    android:id="@+id/eet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toLeftOf="@id/ll_pb"
+                    android:layout_toRightOf="@id/bt_emoji"
+                    android:background="@drawable/abs__textfield_search_selected_holo_light"
+                    android:maxLines="3"
+                    android:layout_margin="3dp"
+                    android:padding="2dp"
+                    android:maxLength="140"
+                    android:minHeight="40dp" 
+                    android:imeActionLabel="完成"
+                    android:inputType="textMultiLine"/>
+            </RelativeLayout>
+
+            <com.way.ui.emoji.EmojiKeyboard
+		        android:id="@+id/face_ll"
+		        android:layout_width="match_parent"
+		        android:layout_height="wrap_content"
+		        android:visibility="gone"
+		        android:focusable="true"
+		        android:clickable="true"/>
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/chat_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/bottom"
+            android:layout_below="@id/my_bottle_title"
+            android:background="@drawable/transparent"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:listSelector="@color/transparent"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/txmbg"
+        	android:scrollbarSize="3dp"
+            android:transcriptMode="alwaysScroll" />
+    </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,60 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bottle_content"
+        android:orientation="vertical" >
+
+        <include layout="@layout/view_bottle_head" />
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/cardbg" >
+
+            <ImageView
+                android:id="@+id/iv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_launcher" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|left"
+                android:src="@drawable/yp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|right"
+                android:layout_margin="10dp"
+                android:src="@drawable/jb_hk" />
+
+            <com.way.ui.emoji.EmojiTextView
+                android:id="@+id/tv_cnt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:layout_margin="10dp"
+                android:background="#b2ffffff"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:padding="12dp"
+                android:text="图片"
+                android:textColor="#41413f"
+                android:textSize="12sp"
+                app:isDynamic="false" />
+        </FrameLayout>
+    </LinearLayout>
+
+</LinearLayout>

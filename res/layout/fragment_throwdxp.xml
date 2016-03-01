@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.way.ui.emoji.EmojiKeyboard
+            android:id="@+id/emojicons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:clickable="true"
+            android:focusable="true"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/rl_cnt"
+            android:layout_width="293dp"
+            android:layout_height="279dp"
+            android:layout_above="@id/emojicons"
+            android:layout_centerInParent="true" >
+
+            <RelativeLayout
+                android:id="@+id/ll_top"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/dxp_t"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/bt_ok"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:onClick="onClick"
+                    android:layout_marginRight="15dp"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/selector_send" />
+
+                <TextView
+                    android:id="@+id/tv_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_toLeftOf="@id/bt_ok"
+                    android:gravity="left|center_vertical"
+                    android:singleLine="true"
+                    android:maxEms="8"
+                    android:ellipsize="end"
+                    android:text="定向瓶"
+                    android:layout_centerVertical="true"
+                    android:textColor="#686e80"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/ll_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/dxp_b"
+                android:gravity="center_vertical"
+                android:padding="5dp" >
+
+                <ImageButton
+                    android:id="@+id/bt_emoji"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:background="@null"
+                    android:onClick="onClick"
+                    android:src="@drawable/selector_emoji" />
+                
+                <Button
+                    android:id="@+id/btn_sendgift"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:onClick="onClick"
+                   android:text="送礼" 
+                   android:visibility="gone"
+                   android:textSize="18sp"
+                   android:textColor="#129AF2"/>
+                
+                <TextView
+	                android:id="@+id/tv_textnumber"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="10dp"
+	                android:background="@null"
+	                android:onClick="onClick"
+	                android:text="0/140"
+	                android:textColor="#999999"
+	                android:textSize="16sp" 
+	                android:visibility="gone"/>
+            </RelativeLayout>
+
+            <com.way.ui.emoji.EmojiEditText
+                android:id="@+id/chuck_edit"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_above="@id/ll_btn"
+                android:layout_below="@id/ll_top"
+                android:background="@drawable/dxp_m"
+                android:gravity="top|left"
+                android:hint=""
+                android:lineSpacingExtra="5dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:scrollbars="vertical"
+                android:textColor="#6f635b"
+                android:textSize="16.5sp"
+                app:isDynamic="false" />
+            
+        </RelativeLayout>
+    </RelativeLayout>
+
+</merge>

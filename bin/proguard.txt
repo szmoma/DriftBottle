@@ -1,0 +1,679 @@
+# view res/layout/activity_giftdetail.xml #generated:37
+# view res/layout/activity_phb.xml #generated:87
+# view res/layout/tab_emoji_qq.xml #generated:9
+-keep class android.support.v4.view.ViewPager { <init>(...); }
+
+# view res/layout/activity_chat.xml #generated:483
+-keep class android.support.v4.widget.SwipeRefreshLayout { <init>(...); }
+
+# view AndroidManifest.xml #generated:316
+-keep class cn.sharesdk.framework.ShareSDKUIShell { <init>(...); }
+
+# view AndroidManifest.xml #generated:478
+-keep class com.easemob.chat.EMChatService { <init>(...); }
+
+# view AndroidManifest.xml #generated:466
+-keep class com.easemob.chat.StartServiceReceiver { <init>(...); }
+
+# view res/layout/activity_album.xml #generated:92
+-keep class com.handmark.pulltorefresh.library.PullToRefreshGridView { <init>(...); }
+
+# view res/layout/activity_concern.xml #generated:92
+# view res/layout/activity_giftbox.xml #generated:39
+# view res/layout/activity_mygift.xml #generated:39
+# view res/layout/activity_talk.xml #generated:78
+# view res/layout/activity_talkdetail.xml #generated:177
+# view res/layout/activity_talkmsg.xml #generated:49
+# view res/layout/activity_visitor.xml #generated:89
+# view res/layout/fragment_sspz_detail.xml #generated:129
+# view res/layout/frament_plpz_detailnt.xml #generated:128
+-keep class com.handmark.pulltorefresh.library.PullToRefreshListView { <init>(...); }
+
+# view AndroidManifest.xml #generated:129
+-keep class com.hnmoma.driftbottle.AlbumActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:487
+-keep class com.hnmoma.driftbottle.AppendPersonInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:208
+-keep class com.hnmoma.driftbottle.AttachImageActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:214
+-keep class com.hnmoma.driftbottle.AttachVoiceActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:534
+-keep class com.hnmoma.driftbottle.BottleDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:271
+-keep class com.hnmoma.driftbottle.ChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:277
+-keep class com.hnmoma.driftbottle.ConcernActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:304
+-keep class com.hnmoma.driftbottle.ContextMenu { <init>(...); }
+
+# view AndroidManifest.xml #generated:92
+-keep class com.hnmoma.driftbottle.DjDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:133
+-keep class com.hnmoma.driftbottle.DjscActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:256
+-keep class com.hnmoma.driftbottle.FishingBottleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:518
+-keep class com.hnmoma.driftbottle.GameActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:196
+-keep class com.hnmoma.driftbottle.GameMsgActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:217
+-keep class com.hnmoma.driftbottle.Game_Cq_Activity { <init>(...); }
+
+# view AndroidManifest.xml #generated:246
+-keep class com.hnmoma.driftbottle.Game_Cq_Yz { <init>(...); }
+
+# view AndroidManifest.xml #generated:241
+-keep class com.hnmoma.driftbottle.Game_cq_tz { <init>(...); }
+
+# view AndroidManifest.xml #generated:193
+-keep class com.hnmoma.driftbottle.GiftActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:199
+-keep class com.hnmoma.driftbottle.GiftBoxActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:162
+-keep class com.hnmoma.driftbottle.GiftDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:166
+-keep class com.hnmoma.driftbottle.GiftWallActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:205
+-keep class com.hnmoma.driftbottle.GradeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:180
+-keep class com.hnmoma.driftbottle.GreetingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:529
+-keep class com.hnmoma.driftbottle.GuideActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:145
+-keep class com.hnmoma.driftbottle.HotTopItemActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:86
+-keep class com.hnmoma.driftbottle.HouseActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:283
+-keep class com.hnmoma.driftbottle.ImageFrameShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:105
+-keep class com.hnmoma.driftbottle.InfomationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:89
+-keep class com.hnmoma.driftbottle.LockPasswordSetActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:188
+-keep class com.hnmoma.driftbottle.LockScreenLoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:80
+-keep class com.hnmoma.driftbottle.LoginActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:149
+-keep class com.hnmoma.driftbottle.LwscActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:59
+-keep class com.hnmoma.driftbottle.MainActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:153
+-keep class com.hnmoma.driftbottle.MlscActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:297
+-keep class com.hnmoma.driftbottle.MyAlertDialog { <init>(...); }
+
+# view AndroidManifest.xml #generated:53
+-keep class com.hnmoma.driftbottle.MyApplication { <init>(...); }
+
+# view AndroidManifest.xml #generated:175
+-keep class com.hnmoma.driftbottle.MyBottleActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:95
+-keep class com.hnmoma.driftbottle.MyDjDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:137
+-keep class com.hnmoma.driftbottle.MyGiftActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:157
+-keep class com.hnmoma.driftbottle.OrderActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:76
+-keep class com.hnmoma.driftbottle.OtherBeachActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:506
+-keep class com.hnmoma.driftbottle.PersonCenterActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:101
+-keep class com.hnmoma.driftbottle.PersonInfoActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:141
+-keep class com.hnmoma.driftbottle.PhbActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:286
+-keep class com.hnmoma.driftbottle.PhotoWallShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:98
+-keep class com.hnmoma.driftbottle.PropertyStoreActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:170
+-keep class com.hnmoma.driftbottle.RechargeActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:83
+-keep class com.hnmoma.driftbottle.RegistActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:184
+-keep class com.hnmoma.driftbottle.SetLockScreenActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:310
+-keep class com.hnmoma.driftbottle.ShowBigImage { <init>(...); }
+
+# view AndroidManifest.xml #generated:289
+-keep class com.hnmoma.driftbottle.SingleImageFrameShowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:202
+-keep class com.hnmoma.driftbottle.SjrwActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:65
+-keep class com.hnmoma.driftbottle.SplashActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:280
+-keep class com.hnmoma.driftbottle.SysChatActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:109
+-keep class com.hnmoma.driftbottle.TalkActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:117
+-keep class com.hnmoma.driftbottle.TalkDetailActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:113
+-keep class com.hnmoma.driftbottle.TalkMsgActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:220
+-keep class com.hnmoma.driftbottle.ThrowActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:266
+-keep class com.hnmoma.driftbottle.ThrowDaxiePingActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:261
+-keep class com.hnmoma.driftbottle.ThrowDxpActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:251
+-keep class com.hnmoma.driftbottle.Throw_jfpz { <init>(...); }
+
+# view AndroidManifest.xml #generated:231
+-keep class com.hnmoma.driftbottle.Throw_ptpz { <init>(...); }
+
+# view AndroidManifest.xml #generated:226
+-keep class com.hnmoma.driftbottle.Throw_sspz { <init>(...); }
+
+# view AndroidManifest.xml #generated:236
+-keep class com.hnmoma.driftbottle.Throw_yxpz { <init>(...); }
+
+# view AndroidManifest.xml #generated:512
+-keep class com.hnmoma.driftbottle.VIPBuyActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:500
+-keep class com.hnmoma.driftbottle.VIPIntroductionActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:125
+-keep class com.hnmoma.driftbottle.VisitorActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:122
+-keep class com.hnmoma.driftbottle.VzoneActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:211
+-keep class com.hnmoma.driftbottle.VzoneTousuActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:493
+-keep class com.hnmoma.driftbottle.WalletActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:523
+-keep class com.hnmoma.driftbottle.WebFrameNoCacheActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:292
+-keep class com.hnmoma.driftbottle.WebFrameWithCacheActivity { <init>(...); }
+
+# view res/layout/view_throw.xml #generated:15
+-keep class com.hnmoma.driftbottle.custom.AnimRelativeLayout { <init>(...); }
+
+# view res/layout/activity_djsc.xml #generated:42
+# view res/layout/activity_lwsc.xml #generated:43
+# view res/layout/fragment_giftwall.xml #generated:87
+-keep class com.hnmoma.driftbottle.custom.BackGridView { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:45
+-keep class com.hnmoma.driftbottle.custom.BallonImageView { <init>(...); }
+
+# view res/layout/activity_game_cq.xml #generated:50
+# view res/layout/activity_game_cq.xml #generated:65
+# view res/layout/activity_main.xml #generated:74
+# view res/layout/activity_person_center.xml #generated:47
+# view res/layout/activity_vzone.xml #generated:187
+# view res/layout/fishing_jfpz.xml #generated:61
+# view res/layout/fishing_kjpz.xml #generated:47
+# view res/layout/fishing_yxpz.xml #generated:51
+# view res/layout/fragment_add_userinfo_basic.xml #generated:25
+# view res/layout/fragment_add_userinfo_more.xml #generated:31
+# view res/layout/fragment_personinfo.xml #generated:71
+# view res/layout/griditem_vzonefunction.xml #generated:11
+# view res/layout/listitem_concern.xml #generated:12
+# view res/layout/listitem_game.xml #generated:15
+# view res/layout/listitem_gift.xml #generated:17
+# view res/layout/listitem_mybottle.xml #generated:13
+# view res/layout/listitem_phb.xml #generated:23
+# view res/layout/listitem_talk.xml #generated:20
+# view res/layout/listitem_talkcomment.xml #generated:13
+# view res/layout/listitem_talkmsg.xml #generated:9
+# view res/layout/listitem_visitor.xml #generated:7
+# view res/layout/listview_comment_item.xml #generated:8
+# view res/layout/row_chat_history.xml #generated:22
+# view res/layout/row_received_message.xml #generated:23
+# view res/layout/row_received_picture.xml #generated:21
+# view res/layout/row_received_video.xml #generated:21
+# view res/layout/row_received_voice.xml #generated:21
+# view res/layout/row_sent_message.xml #generated:21
+# view res/layout/row_sent_picture.xml #generated:21
+# view res/layout/row_sent_video.xml #generated:21
+# view res/layout/row_sent_voice.xml #generated:21
+# view res/layout/view_bottle_head.xml #generated:9
+# view res/layout/view_bottlehead.xml #generated:9
+# view res/layout/view_game_cq_dialog.xml #generated:109
+# view res/layout/view_mybottle_course.xml #generated:23
+# view res/layout/view_mybottle_head.xml #generated:15
+-keep class com.hnmoma.driftbottle.custom.CircularImage { <init>(...); }
+
+# view res/layout/fragment_mybottle.xml #generated:65
+-keep class com.hnmoma.driftbottle.custom.ControlScrollViewPager { <init>(...); }
+
+# view res/layout/listview_item_personality.xml #generated:21
+-keep class com.hnmoma.driftbottle.custom.CustomPersonGridView { <init>(...); }
+
+# view res/layout/activity_vzone.xml #generated:141
+-keep class com.hnmoma.driftbottle.custom.DampView { <init>(...); }
+
+# view res/layout/activity_vzone.xml #generated:554
+# view res/layout/activity_vzone.xml #generated:590
+# view res/layout/fishing_kjpz.xml #generated:132
+# view res/layout/phbhead.xml #generated:6
+-keep class com.hnmoma.driftbottle.custom.ExpandGridView { <init>(...); }
+
+# view res/layout/activity_imageframeshow.xml #generated:62
+# view res/layout/activity_photowallshow.xml #generated:147
+-keep class com.hnmoma.driftbottle.custom.ImageCountTextView { <init>(...); }
+
+# view res/layout/activity_detail_bottle.xml #generated:298
+-keep class com.hnmoma.driftbottle.custom.ListViewLoadMore { <init>(...); }
+
+# view res/layout/activity_lockscreen_login.xml #generated:39
+# view res/layout/activity_setlockscreen.xml #generated:136
+-keep class com.hnmoma.driftbottle.custom.LocusPassWordView { <init>(...); }
+
+# view res/layout/activity_chat.xml #generated:136
+-keep class com.hnmoma.driftbottle.custom.PasteEditText { <init>(...); }
+
+# view res/layout/activity_webframe.xml #generated:53
+-keep class com.hnmoma.driftbottle.custom.ProgressWebView { <init>(...); }
+
+# view res/layout/activity_grade.xml #generated:275
+# view res/layout/activity_vzone.xml #generated:373
+-keep class com.hnmoma.driftbottle.custom.PropsTextProgressBar { <init>(...); }
+
+# view res/layout/choose_griditem.xml #generated:12
+-keep class com.hnmoma.driftbottle.custom.RecyclingImageView { <init>(...); }
+
+# view res/layout/activity_main.xml #generated:216
+-keep class com.hnmoma.driftbottle.custom.RoundProgressBar { <init>(...); }
+
+# view res/layout/activity_imageframeshow.xml #generated:18
+# view res/layout/activity_singleimageframeshow.xml #generated:53
+-keep class com.hnmoma.driftbottle.custom.TextProgressBar { <init>(...); }
+
+# view res/layout/activity_show_big_image.xml #generated:8
+-keep class com.hnmoma.driftbottle.custom.photoview.PhotoView { <init>(...); }
+
+# view res/layout/commonbottle_chat.xml #generated:7
+-keep class com.hnmoma.driftbottle.fragment.CommonBottleChatFragment { <init>(...); }
+
+# view res/layout/taskbottle_chat.xml #generated:7
+-keep class com.hnmoma.driftbottle.fragment.TaskBottleChatFragment { <init>(...); }
+
+# view AndroidManifest.xml #generated:335
+-keep class com.hnmoma.driftbottle.wxapi.WXEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:341
+-keep class com.hnmoma.driftbottle.wxapi.WXPayEntryActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:419
+-keep class com.igexin.download.DownloadProvider { <init>(...); }
+
+# view AndroidManifest.xml #generated:413
+-keep class com.igexin.download.DownloadReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:409
+-keep class com.igexin.download.DownloadService { <init>(...); }
+
+# view AndroidManifest.xml #generated:400
+-keep class com.igexin.sdk.PushActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:392
+-keep class com.igexin.sdk.PushManagerReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:384
+-keep class com.igexin.sdk.PushReceiver { <init>(...); }
+
+# view AndroidManifest.xml #generated:377
+-keep class com.igexin.sdk.PushService { <init>(...); }
+
+# view AndroidManifest.xml #generated:355
+-keep class com.umeng.fb.ContactActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:352
+-keep class com.umeng.fb.ConversationActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:364
+-keep class com.umeng.update.UpdateDialogActivity { <init>(...); }
+
+# view AndroidManifest.xml #generated:359
+-keep class com.umeng.update.net.DownloadingService { <init>(...); }
+
+# view res/layout/activity_phb.xml #generated:81
+# view res/layout/fragment_mybottle.xml #generated:59
+-keep class com.viewpagerindicator.TabPageIndicator { <init>(...); }
+
+# view res/layout/emoji_keyboard.xml #generated:10
+-keep class com.way.ui.emoji.CustomViewPager { <init>(...); }
+
+# view res/layout/fragment_chat.xml #generated:103
+# view res/layout/fragment_throwdxp.xml #generated:108
+# view res/layout/throw_jfpz.xml #generated:170
+# view res/layout/throw_sspz.xml #generated:167
+-keep class com.way.ui.emoji.EmojiEditText { <init>(...); }
+
+# view res/layout/activity_chat.xml #generated:216
+# view res/layout/fragment_chat.xml #generated:121
+# view res/layout/fragment_throwdxp.xml #generated:11
+# view res/layout/throw_jfpz.xml #generated:13
+# view res/layout/throw_sspz.xml #generated:13
+-keep class com.way.ui.emoji.EmojiKeyboard { <init>(...); }
+
+# view res/layout/tab_emoji_qq.xml #generated:2
+-keep class com.way.ui.emoji.EmojiLinearLayout { <init>(...); }
+
+# view res/layout/activity_detail_bottle.xml #generated:214
+# view res/layout/activity_giftdetail.xml #generated:94
+# view res/layout/chatting_item_msg_text_left.xml #generated:36
+# view res/layout/chatting_item_msg_text_right.xml #generated:36
+# view res/layout/fishing_ltpz.xml #generated:117
+# view res/layout/fishing_ltpz.xml #generated:62
+# view res/layout/fishing_plpz.xml #generated:65
+# view res/layout/fishing_plpz.xml #generated:82
+# view res/layout/fishing_sspz.xml #generated:64
+# view res/layout/fishing_sspz.xml #generated:84
+# view res/layout/frament_cardframe.xml #generated:121
+# view res/layout/frament_frame_card.xml #generated:43
+# view res/layout/frament_frame_image.xml #generated:43
+# view res/layout/frament_frame_image_ext.xml #generated:42
+# view res/layout/frament_frame_taskbottle.xml #generated:27
+# view res/layout/frament_frame_text.xml #generated:23
+# view res/layout/frament_frame_text_ext.xml #generated:22
+# view res/layout/frament_frame_voice.xml #generated:30
+# view res/layout/frament_frame_voice_ext.xml #generated:29
+# view res/layout/frament_imageframe.xml #generated:111
+# view res/layout/frament_textframe.xml #generated:101
+# view res/layout/frament_voiceframe.xml #generated:107
+# view res/layout/frament_wdpz_head.xml #generated:14
+# view res/layout/listitem_talk.xml #generated:93
+# view res/layout/listitem_talkmsg.xml #generated:75
+# view res/layout/row_chat_history.xml #generated:80
+# view res/layout/row_received_message.xml #generated:34
+# view res/layout/row_sent_message.xml #generated:32
+# view res/layout/talkdetail_head.xml #generated:22
+# view res/layout/talkdetail_head.xml #generated:51
+-keep class com.way.ui.emoji.EmojiTextView { <init>(...); }
+
+# view res/layout/emoji_keyboard.xml #generated:22
+-keep class com.way.ui.emoji.PagerSlidingTabStrip { <init>(...); }
+
+# view res/layout/tab_emoji_qq.xml #generated:15
+-keep class com.way.ui.pagerindicator.CirclePageIndicator { <init>(...); }
+
+# view res/layout/activity_attach_image.xml #generated:52
+# view res/layout/activity_singleimageframeshow.xml #generated:47
+# view res/layout/splash.xml #generated:14
+-keep class pl.droidsonroids.gif.GifImageView { <init>(...); }
+
+# view res/layout/activity_imageframeshow.xml #generated:13
+# view res/layout/activity_photowallshow.xml #generated:58
+-keep class uk.co.senab.photoview.PhotoView { <init>(...); }
+
+# onClick res/layout/commom_back_btn.xml #generated:2
+-keepclassmembers class * { *** back(...); }
+
+# onClick res/layout/alert_dialog.xml #generated:61
+-keepclassmembers class * { *** cancel(...); }
+
+# onClick res/layout/context_menu_for_text.xml #generated:10
+-keepclassmembers class * { *** copy(...); }
+
+# onClick res/layout/context_menu_for_image.xml #generated:28
+# onClick res/layout/context_menu_for_location.xml #generated:10
+# onClick res/layout/context_menu_for_text.xml #generated:28
+# onClick res/layout/context_menu_for_video.xml #generated:16
+# onClick res/layout/context_menu_for_voice.xml #generated:16
+-keepclassmembers class * { *** delete(...); }
+
+# onClick res/layout/activity_chat.xml #generated:136
+-keepclassmembers class * { *** editClick(...); }
+
+# onClick res/layout/context_menu_for_image.xml #generated:45
+# onClick res/layout/context_menu_for_text.xml #generated:44
+-keepclassmembers class * { *** forward(...); }
+
+# onClick res/layout/activity_chat.xml #generated:177
+-keepclassmembers class * { *** more(...); }
+
+# onClick res/layout/activity_chat.xml #generated:28
+-keepclassmembers class * { *** moreFn(...); }
+
+# onClick res/layout/alert_dialog.xml #generated:75
+-keepclassmembers class * { *** ok(...); }
+
+# onClick res/layout/activity_add_userinfo.xml #generated:12
+# onClick res/layout/activity_add_userinfo.xml #generated:31
+# onClick res/layout/activity_attach_image.xml #generated:15
+# onClick res/layout/activity_attach_image.xml #generated:24
+# onClick res/layout/activity_attach_voice.xml #generated:14
+# onClick res/layout/activity_attach_voice.xml #generated:23
+# onClick res/layout/activity_attach_voice.xml #generated:65
+# onClick res/layout/activity_charm.xml #generated:111
+# onClick res/layout/activity_charm.xml #generated:15
+# onClick res/layout/activity_charm.xml #generated:35
+# onClick res/layout/activity_chat.xml #generated:186
+# onClick res/layout/activity_chat.xml #generated:252
+# onClick res/layout/activity_chat.xml #generated:282
+# onClick res/layout/activity_chat.xml #generated:313
+# onClick res/layout/activity_chat.xml #generated:344
+# onClick res/layout/activity_chat.xml #generated:384
+# onClick res/layout/activity_chat.xml #generated:415
+# onClick res/layout/activity_chat.xml #generated:446
+# onClick res/layout/activity_concern.xml #generated:13
+# onClick res/layout/activity_concern.xml #generated:23
+# onClick res/layout/activity_concern.xml #generated:48
+# onClick res/layout/activity_concern.xml #generated:60
+# onClick res/layout/activity_concern.xml #generated:72
+# onClick res/layout/activity_detail_bottle.xml #generated:119
+# onClick res/layout/activity_detail_bottle.xml #generated:138
+# onClick res/layout/activity_detail_bottle.xml #generated:18
+# onClick res/layout/activity_detail_bottle.xml #generated:39
+# onClick res/layout/activity_detail_bottle.xml #generated:69
+# onClick res/layout/activity_detail_bottle.xml #generated:90
+# onClick res/layout/activity_djdetail.xml #generated:128
+# onClick res/layout/activity_djdetail.xml #generated:15
+# onClick res/layout/activity_djdetail.xml #generated:196
+# onClick res/layout/activity_djdetail.xml #generated:264
+# onClick res/layout/activity_djdetail.xml #generated:332
+# onClick res/layout/activity_djsc.xml #generated:16
+# onClick res/layout/activity_game_msg.xml #generated:16
+# onClick res/layout/activity_gift.xml #generated:15
+# onClick res/layout/activity_giftbox.xml #generated:16
+# onClick res/layout/activity_giftdetail.xml #generated:141
+# onClick res/layout/activity_giftdetail.xml #generated:16
+# onClick res/layout/activity_greeting.xml #generated:15
+# onClick res/layout/activity_greeting.xml #generated:34
+# onClick res/layout/activity_greeting.xml #generated:55
+# onClick res/layout/activity_greeting.xml #generated:67
+# onClick res/layout/activity_hottopitem.xml #generated:15
+# onClick res/layout/activity_hottopitem.xml #generated:36
+# onClick res/layout/activity_imageframeshow.xml #generated:28
+# onClick res/layout/activity_infomation.xml #generated:15
+# onClick res/layout/activity_lockpassword.xml #generated:15
+# onClick res/layout/activity_lockpassword.xml #generated:76
+# onClick res/layout/activity_login.xml #generated:126
+# onClick res/layout/activity_login.xml #generated:140
+# onClick res/layout/activity_lwsc.xml #generated:16
+# onClick res/layout/activity_lwsc.xml #generated:65
+# onClick res/layout/activity_main.xml #generated:216
+# onClick res/layout/activity_main.xml #generated:74
+# onClick res/layout/activity_mydjdetail.xml #generated:14
+# onClick res/layout/activity_mydjdetail.xml #generated:92
+# onClick res/layout/activity_mygift.xml #generated:15
+# onClick res/layout/activity_order.xml #generated:16
+# onClick res/layout/activity_order.xml #generated:236
+# onClick res/layout/activity_order.xml #generated:250
+# onClick res/layout/activity_otherbeach.xml #generated:59
+# onClick res/layout/activity_otherbeach.xml #generated:82
+# onClick res/layout/activity_personality.xml #generated:16
+# onClick res/layout/activity_personality.xml #generated:36
+# onClick res/layout/activity_phb.xml #generated:15
+# onClick res/layout/activity_phb.xml #generated:29
+# onClick res/layout/activity_phb.xml #generated:58
+# onClick res/layout/activity_photowallshow.xml #generated:78
+# onClick res/layout/activity_recharge.xml #generated:118
+# onClick res/layout/activity_recharge.xml #generated:15
+# onClick res/layout/activity_recharge.xml #generated:174
+# onClick res/layout/activity_recharge.xml #generated:230
+# onClick res/layout/activity_recharge.xml #generated:286
+# onClick res/layout/activity_singleimageframeshow.xml #generated:16
+# onClick res/layout/activity_singleimageframeshow.xml #generated:25
+# onClick res/layout/activity_sjrw.xml #generated:15
+# onClick res/layout/activity_talk.xml #generated:14
+# onClick res/layout/activity_talk.xml #generated:41
+# onClick res/layout/activity_talkdetail.xml #generated:115
+# onClick res/layout/activity_talkdetail.xml #generated:134
+# onClick res/layout/activity_talkdetail.xml #generated:15
+# onClick res/layout/activity_talkdetail.xml #generated:35
+# onClick res/layout/activity_talkdetail.xml #generated:65
+# onClick res/layout/activity_talkdetail.xml #generated:86
+# onClick res/layout/activity_talkmsg.xml #generated:14
+# onClick res/layout/activity_talkmsg.xml #generated:34
+# onClick res/layout/activity_tousu.xml #generated:15
+# onClick res/layout/activity_tousu.xml #generated:24
+# onClick res/layout/activity_vip_buy.xml #generated:131
+# onClick res/layout/activity_vip_buy.xml #generated:185
+# onClick res/layout/activity_vip_buy.xml #generated:239
+# onClick res/layout/activity_vip_buy.xml #generated:76
+# onClick res/layout/activity_visitor.xml #generated:15
+# onClick res/layout/activity_vzone.xml #generated:187
+# onClick res/layout/activity_webframe.xml #generated:16
+# onClick res/layout/activity_webframe.xml #generated:35
+# onClick res/layout/chatting_item_msg_text_left.xml #generated:26
+# onClick res/layout/chatting_item_msg_text_right.xml #generated:26
+# onClick res/layout/fishing_yxpz_cq.xml #generated:20
+# onClick res/layout/fishing_yxpz_cq.xml #generated:298
+# onClick res/layout/fishing_yxpz_cq.xml #generated:308
+# onClick res/layout/fragment_chat.xml #generated:92
+# onClick res/layout/fragment_giftwall.xml #generated:16
+# onClick res/layout/fragment_giftwall.xml #generated:54
+# onClick res/layout/fragment_mybottle.xml #generated:13
+# onClick res/layout/fragment_mybottle.xml #generated:23
+# onClick res/layout/fragment_mybottle.xml #generated:33
+# onClick res/layout/fragment_mybottlepi.xml #generated:15
+# onClick res/layout/fragment_mybottlepi.xml #generated:26
+# onClick res/layout/fragment_personinfo.xml #generated:16
+# onClick res/layout/fragment_personinfo.xml #generated:36
+# onClick res/layout/fragment_throw.xml #generated:2
+# onClick res/layout/fragment_throw.xml #generated:22
+# onClick res/layout/fragment_throw.xml #generated:45
+# onClick res/layout/fragment_throw.xml #generated:74
+# onClick res/layout/fragment_throw.xml #generated:97
+# onClick res/layout/fragment_throwdxp.xml #generated:36
+# onClick res/layout/fragment_throwdxp.xml #generated:72
+# onClick res/layout/fragment_throwdxp.xml #generated:81
+# onClick res/layout/fragment_throwdxp.xml #generated:94
+# onClick res/layout/frament_cardframe.xml #generated:22
+# onClick res/layout/frament_frame_image.xml #generated:26
+# onClick res/layout/frament_frame_image_ext.xml #generated:25
+# onClick res/layout/frament_imageframe.xml #generated:22
+# onClick res/layout/frament_textframe.xml #generated:22
+# onClick res/layout/frament_voiceframe.xml #generated:22
+# onClick res/layout/listitem_game.xml #generated:100
+# onClick res/layout/listitem_game.xml #generated:115
+# onClick res/layout/listitem_game.xml #generated:130
+# onClick res/layout/listitem_game.xml #generated:15
+# onClick res/layout/listitem_gift.xml #generated:24
+# onClick res/layout/listitem_hottop.xml #generated:111
+# onClick res/layout/listitem_hottop.xml #generated:162
+# onClick res/layout/listitem_hottop.xml #generated:212
+# onClick res/layout/listitem_hottop.xml #generated:263
+# onClick res/layout/listitem_hottop.xml #generated:30
+# onClick res/layout/listitem_hottop.xml #generated:59
+# onClick res/layout/listitem_sjrw.xml #generated:17
+# onClick res/layout/listitem_talk.xml #generated:124
+# onClick res/layout/listitem_talk.xml #generated:140
+# onClick res/layout/listitem_talk.xml #generated:20
+# onClick res/layout/listitem_talk.xml #generated:29
+# onClick res/layout/listitem_talk.xml #generated:61
+# onClick res/layout/listitem_talk.xml #generated:75
+# onClick res/layout/listitem_talk.xml #generated:83
+# onClick res/layout/listitem_talkcomment.xml #generated:13
+# onClick res/layout/listitem_talkcomment.xml #generated:25
+# onClick res/layout/listitem_talkcomment.xml #generated:48
+# onClick res/layout/listitem_talkcomment.xml #generated:73
+# onClick res/layout/listitem_talkcomment.xml #generated:86
+# onClick res/layout/listitem_talkmsg.xml #generated:9
+# onClick res/layout/pay_result_wx.xml #generated:35
+# onClick res/layout/row_received_message.xml #generated:23
+# onClick res/layout/row_received_picture.xml #generated:21
+# onClick res/layout/row_received_video.xml #generated:21
+# onClick res/layout/row_received_voice.xml #generated:21
+# onClick res/layout/row_sent_message.xml #generated:21
+# onClick res/layout/row_sent_picture.xml #generated:21
+# onClick res/layout/row_sent_video.xml #generated:21
+# onClick res/layout/row_sent_voice.xml #generated:21
+# onClick res/layout/throw_jfpz.xml #generated:101
+# onClick res/layout/throw_jfpz.xml #generated:110
+# onClick res/layout/throw_jfpz.xml #generated:188
+# onClick res/layout/throw_jfpz.xml #generated:44
+# onClick res/layout/throw_jfpz.xml #generated:55
+# onClick res/layout/throw_sspz.xml #generated:106
+# onClick res/layout/throw_sspz.xml #generated:115
+# onClick res/layout/throw_sspz.xml #generated:124
+# onClick res/layout/throw_sspz.xml #generated:185
+# onClick res/layout/throw_sspz.xml #generated:49
+# onClick res/layout/throw_sspz.xml #generated:60
+# onClick res/layout/throw_yxpz.xml #generated:26
+# onClick res/layout/throw_yxpz.xml #generated:301
+# onClick res/layout/throw_yxpz.xml #generated:311
+# onClick res/layout/view_bottle_head.xml #generated:9
+# onClick res/layout/view_mybottle_course.xml #generated:23
+# onClick res/layout/view_mybottle_head.xml #generated:15
+-keepclassmembers class * { *** onClick(...); }
+
+# onClick res/layout/activity_chat.xml #generated:95
+-keepclassmembers class * { *** setModeKeyboard(...); }
+
+# onClick res/layout/activity_chat.xml #generated:86
+-keepclassmembers class * { *** setModeVoice(...); }
+
+# onClick res/layout/activity_chat.xml #generated:45
+-keepclassmembers class * { *** toGroupDetails(...); }
+

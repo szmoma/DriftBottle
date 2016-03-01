@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_head"
+       android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:layout_gravity="center"
+        android:adjustViewBounds="true"
+        android:background="@drawable/giftheadbg"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:paddingTop="1dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/defalutimg" />
+
+    <TextView
+        android:id="@+id/tv_mz"
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/giftmiddlebg"
+        android:ellipsize="end"
+        android:gravity="center"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:singleLine="true"
+        android:text="铂金鹿角"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="72dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/giftbottom"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingBottom="2dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp" >
+
+        <TextView
+            android:id="@+id/tv_jg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="钻石: 2000"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#a78a66"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_charm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+             android:singleLine="true"
+            android:ellipsize="end"
+            android:text="魅力 +999"
+            android:textColor="#a78a66"
+            android:textSize="12sp"/>
+    </LinearLayout>
+
+</LinearLayout>

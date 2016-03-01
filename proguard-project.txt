@@ -1,0 +1,116 @@
+-optimizationpasses 5
+-dontoptimize
+-dontusemixedcaseclassnames
+-dontskipnonpubliclibraryclasses
+-dontpreverify
+-verbose
+-dontwarn
+-optimizations !code/simplification/arithmetic,!field/*,!class/merging/*
+
+-keep public class * extends android.app.Activity
+-keep public class * extends android.app.Application
+-keep public class * extends android.app.Service
+-keep public class * extends android.app.View
+-keep public class * extends android.content.BroadcastReceiver
+-keep public class * extends android.content.ContentProvider
+-keep public class * extends android.app.backup.BackupAgentHelper
+-keep public class * extends android.preference.Preference
+
+-keepattributes Signature
+
+-keep class android.net.http.SslError
+-keep public class com.hnmoma.driftbottle.adapter.MyAuthorizeAdapter
+-keep class com.hnmoma.driftbottle.model.** {*;}
+-keep class com.google.gson.** {*;} 
+-keep class android.webkit.**{*;}
+-keep class cn.sharesdk.**{*;}
+-keep class com.sina.**{*;}
+-keep class **.R$* {*;}
+-keep class **.R{*;}
+-dontwarn cn.sharesdk.**
+-dontwarn **.R$*
+-dontwarn android.webkit.**
+-dontwarn android.webkit.WebSettings.**
+
+#个推
+-dontwarn com.igexin.**
+-keep class com.igexin.**{*;}
+
+#环信
+-keep class com.easemob.** {*;}
+-keep class org.jivesoftware.** {*;}
+-keep class org.apache.** {*;}
+-dontwarn  com.easemob.**
+#另外，demo中发送表情的时候使用到反射，需要keep SmileUtils,注意前面的包名，
+#不要SmileUtils复制到自己的项目下，keep的时候还是写的demo里的包名
+-keep class com.hnmoma.driftbottle.util.SmileUtils {*;}
+
+
+#以下两个命令保证错误调试信息不混淆
+-renamesourcefileattribute SourceFile
+-keepattributes SourceFile,LineNumberTable
+
+-keepclasseswithmembernames class * {
+    native <methods>;
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet);
+}
+
+-keepclasseswithmembers class * {
+    public <init>(android.content.Context, android.util.AttributeSet, int);
+}
+
+-keepclassmembers class * extends android.app.Activity {
+   public void *(android.view.View);
+}
+
+-keepclassmembers enum * {
+    public static **[] values();
+    public static ** valueOf(java.lang.String);
+}
+
+-keep public class com.hnmoma.driftbottle.R$*{
+  public static final int *;
+}
+
+-keepclassmembers class * {
+   public <init>(org.json.JSONObject);
+}
+
+-keep public class com.umeng.fb.ui.ThreadView {
+}
+
+-keep class * implements android.os.Parcelable {
+  public static final android.os.Parcelable$Creator *;
+}
+
+-keepclassmembers class * extends de.greenrobot.dao.AbstractDao {
+    public static java.lang.String TABLENAME;
+}
+-keep class **$Properties
+
+#pulltorefresh
+-dontwarn com.handmark.pulltorefresh.library.**
+-keep class com.handmark.pulltorefresh.library.** { *;}
+-dontwarn com.handmark.pulltorefresh.library.extras.**
+-keep class com.handmark.pulltorefresh.library.extras.** { *;}
+-dontwarn com.handmark.pulltorefresh.library.internal.**
+-keep class com.handmark.pulltorefresh.library.internal.** { *;}
+
+-dontwarn org.slf4j.**
+
+-dontwarn org.apache.commons.codec.binary.**
+
+-keep public class pl.droidsonroids.gif.GifIOException{<init>(int);}
+-keep class pl.droidsonroids.gif.GifInfoHandle{<init>(long,int,int,int);}
+
+-libraryjars   libs/android-support-v4.jar
+-dontwarn android.support.v4.**  
+-keep class android.support.v4.** { *; }
+-keep interface android.support.v4.app.** { *; }
+-keep public class * extends android.support.v4.**
+-keep public class * extends android.app.Fragment
+
+-ignorewarnings

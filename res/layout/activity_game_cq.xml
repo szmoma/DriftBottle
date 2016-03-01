@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_guess_animation" >
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" >
+
+            <TextView
+                android:id="@+id/tv_t_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="3dp"
+                android:textColor="#6a1e00"
+                android:drawableTop="@drawable/icon_stone_notbegin_76"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/tv_t_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#6a1e00"
+                android:drawableTop="@drawable/icon_stone_notbegin_76" />
+
+            <TextView
+                android:id="@+id/tv_t_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#6a1e00"
+                android:drawableTop="@drawable/icon_stone_notbegin_76" />
+        </LinearLayout>
+
+        
+        <com.hnmoma.driftbottle.custom.CircularImage
+				        android:id="@+id/iv_t"
+				        android:layout_width="50dp"
+				        android:layout_height="50dp"
+				        android:layout_marginBottom="6dp"
+				        android:adjustViewBounds="true"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:padding="8dp" >
+
+        <com.hnmoma.driftbottle.custom.CircularImage
+				        android:id="@+id/iv_b"
+				        android:layout_width="50dp"
+				        android:layout_height="50dp"
+				        android:layout_marginBottom="6dp"
+				        android:adjustViewBounds="true"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp" >
+
+            <TextView
+                android:id="@+id/tv_b_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="3dp"
+                android:drawableTop="@drawable/icon_stone_notbegin_76"
+                android:gravity="center"
+                android:textColor="#6a1e00"
+                android:text="" />
+
+            <TextView
+                android:id="@+id/tv_b_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#6a1e00"
+                android:drawableTop="@drawable/icon_stone_notbegin_76" />
+
+            <TextView
+                android:id="@+id/tv_b_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:drawablePadding="3dp"
+                android:gravity="center"
+                android:textColor="#6a1e00"
+                android:drawableTop="@drawable/icon_stone_notbegin_76" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_l"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginTop="-10dp"
+        android:src="@drawable/pic_stone_up" />
+
+    <ImageView
+        android:id="@+id/iv_r"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="-10dp"
+        android:layout_marginBottom="-10dp"
+        android:src="@drawable/pic_stone_down" />
+
+    <ImageView
+        android:id="@+id/iv_c"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:src="@drawable/pic_round1" />
+
+</RelativeLayout>

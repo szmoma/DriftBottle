@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:paddingTop="1dp"
+        android:paddingLeft="1dp"
+        android:paddingRight="1dp"
+        android:background="@drawable/giftheadbg" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/giftmiddlebg"
+        android:gravity="center"
+        android:text="铂金鹿角"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:textColor="@color/white"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/giftbottom"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_deadline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="钻石: 2000"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#a78a66"
+            android:textSize="10sp"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_charm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="魅力 +999"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textColor="#a78a66"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</LinearLayout>

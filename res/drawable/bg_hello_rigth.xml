@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/chat_bg"
+        android:drawable="@drawable/chatto_bg"/>
+    <item
+        android:id="@+id/hello"
+        android:bottom="8dp"
+        android:left="-10dp"
+        android:right="8dp"
+        android:top="-8.5dp">
+        <bitmap
+            android:antialias="true"
+            android:filter="true"
+            android:gravity="top|left"
+            android:src="@drawable/ic_hello_rigth" />
+    </item>
+
+</layer-list>

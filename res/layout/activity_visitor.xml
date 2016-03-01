@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/shape_top_bar" >
+
+        <ImageButton
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:onClick="onClick"
+            android:src="@drawable/title_btn_back" />
+
+        <TextView
+            android:id="@+id/tv_vzone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="浏览历史"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/content"
+        android:visibility="visible"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:id="@id/tv_vistor_sum"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#dddddd"
+            android:paddingBottom="10dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="10dp"
+            android:text="总浏览量：100"
+            android:textColor="#666666"
+            android:visibility="gone"
+            android:textSize="@dimen/label_setting" />
+        
+        <RelativeLayout
+            android:id="@id/rl_bottom"
+            android:layout_width="match_parent"
+            android:background="#333333"
+            android:layout_height="48dp"
+            android:layout_alignParentBottom="true" >
+            
+            <ImageView
+                android:id="@id/iv_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="8dp"
+                android:layout_alignParentLeft="true"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_vip" />
+
+            <TextView
+                android:id="@id/tv_vip"
+                android:layout_toRightOf="@id/iv_vip"
+                android:text="普通访客容量 20"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="4dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginLeft="8dp"
+                android:textColor="#fcfcfc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </RelativeLayout>
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/lv_allvisitor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/tv_vistor_sum"
+            android:layout_above="@id/rl_bottom"
+            android:background="#00000000"
+            android:cacheColorHint="#00000000"
+            android:divider="#efefef"
+            android:dividerHeight="0.8dp"
+            android:fadingEdge="none"
+            android:listSelector="#00000000"
+            android:scrollbars="none"
+            android:scrollbarThumbVertical="@color/sc" />
+    </RelativeLayout>
+
+    <include
+        android:visibility="gone"
+        android:id="@id/no_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        layout="@layout/no_message" />
+
+</LinearLayout>

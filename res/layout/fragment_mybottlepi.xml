@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <LinearLayout 
+        android:id="@+id/ll_mbmg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone"
+        android:background="@drawable/mb_bottombg"
+        android:padding="10dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/bt_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:onClick="onClick"
+            android:layout_marginRight="5dp"
+            android:textSize="19sp"
+            android:textColor="#505050"
+            android:background="@drawable/selector_throw_btn"
+            android:layout_weight="1"/>
+        <Button
+            android:id="@+id/bt_del"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="删除"
+            android:onClick="onClick"
+            android:background="@drawable/selector_del_btn"
+            android:textSize="19sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/my_bottle_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_mbmg"
+        android:background="#00000000"
+        android:cacheColorHint="#00000000"
+        android:divider="#e6e6e6"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"
+        android:scrollbarThumbVertical="@color/sc"
+        android:scrollbarSize="3dp"
+        android:listSelector="#00000000"
+        />
+</RelativeLayout>

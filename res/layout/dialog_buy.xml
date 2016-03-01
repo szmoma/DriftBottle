@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buydialogbg"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_head"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="15dp"
+                android:src="@drawable/defalutimg" />
+
+            <TextView
+                android:id="@+id/tv_ts"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="#666666"
+	            android:textSize="19sp" 
+                android:text="提示" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" >
+
+            <Button
+                android:id="@+id/bt_01"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_popleftbt"
+                android:padding="5dp"
+                android:text="@string/cancel"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/bt_02"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="2.5dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_poprightbt"
+                android:padding="5dp"
+                android:text="@string/confirm"
+                android:textSize="20sp"
+                android:textColor="#ffffff" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

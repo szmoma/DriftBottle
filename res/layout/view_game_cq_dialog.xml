@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_cq_mcontent" >
+
+        <ImageButton
+            android:id="@+id/ib_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/btn_close_untick_62" />
+
+        <LinearLayout
+            android:id="@+id/ll_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:padding="25dp" >
+
+            <ImageView
+                android:id="@+id/iv_s1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pic_smallstar_unhave" />
+
+            <ImageView
+                android:id="@+id/iv_s2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:src="@drawable/pic_smallstar_unhave" />
+
+            <ImageView
+                android:id="@+id/iv_s3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/pic_smallstar_unhave" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_top"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/iv_state"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:src="@drawable/pic_winmore" />
+
+            <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="扇贝 "
+                android:textColor="#e47001"
+                android:textSize="22sp" />
+            
+            <TextView
+                android:id="@+id/tv_sb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="+9"
+                android:layout_marginLeft="8dp"
+                android:textColor="#ee341d"
+                android:textSize="28sp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:text="注：系统收取10%的服务费"
+                android:textColor="#6a1e00"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_center"
+            android:background="@drawable/bg_small"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="10dp" >
+
+            <com.hnmoma.driftbottle.custom.CircularImage
+				        android:id="@+id/dl_iv_head"
+				        android:layout_width="60dp"
+				        android:layout_height="60dp"
+				        android:layout_marginRight="10dp"
+				        android:adjustViewBounds="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/dl_tv_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center_vertical"
+                    android:layout_marginBottom="10dp"
+                    android:textSize="22sp"
+                    android:textColor="#0d0707"
+                    android:text="墨马科技" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="10dp">
+
+                    <Button
+                        android:id="@+id/dl_bt_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:background="@drawable/selector_green_btn"
+                        android:text="聊天"
+                        android:layout_alignParentLeft="true"
+                        android:textSize="16sp"
+                        android:textColor="#ffffff" />
+
+                    <Button
+                        android:id="@+id/dl_bt_tz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:background="@drawable/selector_orange_btn"
+                        android:text="再次挑战"
+                        android:layout_toRightOf="@id/dl_bt_ll"
+                        android:layout_marginLeft="10dp"
+                        android:textSize="16sp"
+                        android:textColor="#ffffff" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

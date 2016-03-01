@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background" />
+
+            <ImageView
+                android:id="@+id/iv_lang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="140dp"
+                android:background="@drawable/main_lang"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_shui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="160dp"
+                android:background="@drawable/main_shui"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_fishingrob"
+                android:layout_width="100dp"
+                android:layout_height="80dp"
+                android:layout_above="@id/iv_lang"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:adjustViewBounds="true"
+                android:scaleType="fitXY"
+                android:src="@drawable/fishingrod"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_01"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/shape_top_bar" >
+
+            <ImageButton
+                android:id="@+id/bt_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:onClick="onClick"
+                android:src="@drawable/title_btn_back" />
+
+            <TextView
+                android:id="@+id/tv_beach_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:maxEms="7"
+                android:singleLine="true"
+                android:text="@string/my_zone"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_top" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_dredgeup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:onClick="onClick"
+            android:paddingBottom="40dp" >
+
+            <ImageView
+                android:id="@+id/iv_net"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/beach_net" />
+
+            <TextView
+                android:id="@+id/tv_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/iv_net"
+                android:background="@drawable/beach_red_bg"
+                android:gravity="center"
+                android:text=""
+                android:textColor="@color/white"
+                android:textSize="8sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/iv_net"
+                android:background="@drawable/beach_laolaokan" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</merge>

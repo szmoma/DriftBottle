@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/iv_head"
+        android:layout_width="72dp"
+        android:layout_height="72dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/vzone_emptygift"
+        android:padding="1dp"
+        android:layout_gravity="center"
+        android:scaleType="centerInside" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:textColor="#86898e"
+        android:textSize="18sp"
+        android:text="违规图片" 
+        android:visibility="gone"/>
+</LinearLayout>

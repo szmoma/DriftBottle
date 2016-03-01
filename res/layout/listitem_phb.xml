@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp" >
+
+    <TextView
+        android:id="@+id/tv_mc"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/transparent"
+        android:gravity="center"
+        android:text="1"
+        android:textColor="#f2a707"
+        android:textSize="13sp" />
+
+    <com.hnmoma.driftbottle.custom.CircularImage
+        android:id="@+id/iv_head"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="2dp" >
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawablePadding="5dp"
+            android:drawableRight="@drawable/m"
+            android:ellipsize="end"
+            android:gravity="left|center_vertical"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:text="墨马"
+            android:textColor="#4e4e4e"
+            android:textSize="12sp" />
+        
+        <ImageView
+            android:id="@+id/iv_vip"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_name"
+            android:background="@drawable/ic_vip"
+            android:layout_marginLeft="5dp" />
+
+        <TextView
+            android:id="@+id/tv_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="魅力：34334"
+            android:textColor="#999999"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+</LinearLayout>

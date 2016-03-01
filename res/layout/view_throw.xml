@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_second"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true" >
+
+    <View
+        android:id="@+id/ll_hint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#95000000"
+        android:visibility="gone" />
+
+    <com.hnmoma.driftbottle.custom.AnimRelativeLayout
+        android:id="@+id/chuck_bottle_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="10dp" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/transparent"
+            android:src="@drawable/bottle_empty" />
+    </com.hnmoma.driftbottle.custom.AnimRelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_hand"
+        android:layout_width="50dp"
+        android:layout_height="80dp"
+        android:layout_alignBottom="@id/chuck_bottle_layout"
+        android:layout_toLeftOf="@id/chuck_bottle_layout"
+        android:src="@drawable/guide_for_dockgesture_hand"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/iv_hand"
+        android:layout_toLeftOf="@id/iv_hand"
+        android:text="滑动瓶子向大海甩出去"
+        android:textColor="@color/white"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/chuck_spray1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottle_spray"
+        android:visibility="gone" />
+
+</RelativeLayout>

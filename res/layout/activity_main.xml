@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.hnmoma.driftbottle"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white" >
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_bottom_bar" />
+
+        <RelativeLayout
+            android:id="@+id/rl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/menu"
+            android:background="@drawable/background" >
+
+            <ImageView
+                android:id="@+id/iv_lang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="130dp"
+                android:background="@drawable/main_lang"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/iv_shui"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="150dp"
+                android:background="@drawable/main_shui"
+                android:visibility="visible" />
+
+            <com.hnmoma.driftbottle.custom.BallonImageView
+                android:id="@+id/bottle_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="28dp"
+                android:minWidth="28dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginRight="15dp"
+                android:background="@color/transparent"
+                android:src="@drawable/bottle_balloon" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="bottom" >
+
+            <FrameLayout
+                android:layout_width="96dp"
+                android:layout_height="96dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="-16dp"
+                android:layout_marginLeft="-16dp"
+                android:background="@drawable/mbg_headbg"
+                android:padding="2dp" >
+
+                <com.hnmoma.driftbottle.custom.CircularImage
+                    android:id="@+id/ib_head"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="3dp"
+                    android:onClick="onClick" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/mbg_headbg_2" />
+
+                <ImageView
+                    android:id="@+id/main_kj_new"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right|top"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/main_kj_new"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="bottom" >
+
+                <LinearLayout
+                    android:id="@+id/fl_xx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <FrameLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:background="@null"
+                            android:src="@drawable/main_msg_n" />
+
+                        <ImageView
+                            android:id="@+id/main_msg_new"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="top|right"
+                            android:background="@drawable/main_msg_new" />
+                    </FrameLayout>
+
+                    <TextView
+                        android:id="@+id/xx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="bottom"
+                        android:paddingBottom="15dp"
+                        android:text="@string/main_message"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_setting"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.4"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/main_mybottle" />
+
+                    <TextView
+                        android:id="@+id/tv_setting"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="3dp"
+                        android:gravity="bottom"
+                        android:text="@string/main_mybottle"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/fl_rpz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.1"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@null"
+                        android:src="@drawable/main_throw_n" />
+
+                    <TextView
+                        android:id="@+id/rpz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="-8dp"
+                        android:gravity="bottom"
+                        android:paddingBottom="15dp"
+                        android:text="@string/main_throw"
+                        android:textColor="@color/white"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="39.5dp"
+            android:layout_height="39.5dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp" >
+
+            <ImageView
+                android:id="@+id/ivPropBg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="2dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/pick_bottle__props_no" />
+
+            <com.hnmoma.driftbottle.custom.RoundProgressBar
+                android:id="@+id/pb_round"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="center"
+                android:onClick="onClick"
+                android:src="@drawable/pick_bottle__props_no"
+                android_custom:max="100"
+                android_custom:roundColor="#f4fcef"
+                android_custom:roundProgressColor="#fee920"
+                android_custom:roundWidth="4dp"
+                android_custom:textColor="#c16a04"
+                android_custom:textIsDisplayable="true"
+                android_custom:textSize="12sp" />
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="100dp"
+            android:layout_marginTop="80dp"
+            android:background="@drawable/main_yun" />
+    </RelativeLayout>
+
+</merge>

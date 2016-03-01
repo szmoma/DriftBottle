@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+    <RelativeLayout
+        android:id="@+id/rl_01"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@drawable/shape_top_bar" >
+
+        <ImageButton
+            android:id="@+id/bt_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_btn_back"
+            android:onClick="onClick" />
+
+        <TextView
+            android:id="@+id/tv_vzone_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="礼物墙"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+
+        <TextView
+            android:id="@+id/tv_nodx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:padding="10dp"
+            android:text="未答谢"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible" >
+
+        <RelativeLayout
+            android:id="@+id/rl_mycharm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/selector_btn_function2"
+            android:onClick="onClick"
+            android:padding="10dp" >
+
+            <TextView
+                android:id="@+id/tv_mysendrecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="送礼记录"
+                android:textColor="#787878"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:paddingRight="8dp"
+                android:src="@drawable/icon_arrow_translate" />
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_below="@id/rl_mycharm"
+            android:layout_width="match_parent"
+            android:layout_height="0.8dp"
+            android:background="@color/line_grey" />
+
+        <com.hnmoma.driftbottle.custom.BackGridView
+            android:id="@+id/wgv_giftwall"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/line"
+            android:background="@null"
+            android:fadingEdge="none"
+            android:gravity="center"
+            android:horizontalSpacing="20dp"
+            android:listSelector="@color/transparent"
+            android:numColumns="4"
+            android:paddingLeft="4dp"
+            android:paddingRight="4dp"
+            android:scrollbars="none"
+            android:stretchMode="columnWidth"
+            android:verticalSpacing="30dp" />
+
+        <include
+            android:id="@id/no_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/rl_mycharm"
+            layout="@layout/no_message"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</LinearLayout>

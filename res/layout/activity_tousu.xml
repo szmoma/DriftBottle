@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/shape_top_bar"
+        android:visibility="visible" >
+
+        <Button
+            android:id="@+id/bt_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_btn_back"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/bt_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/tousu_title_btn_ok"
+            android:onClick="onClick"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="举报"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+    </RelativeLayout>
+
+    <TextView 
+        android:id="@+id/tv_desc"
+        android:layout_below="@id/rl_top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="14dp"
+        android:text="@string/jubao_reason"
+        android:background="@color/white"
+        android:textSize="16sp"
+        android:textColor="#333333" />
+    
+    <View 
+        android:id="@+id/view_line"
+        android:layout_below="@id/tv_desc"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dfdfdf"
+        />
+    
+    <RelativeLayout
+        android:id="@+id/rl_center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/view_line"
+        android:background="@color/white" >
+
+        <RadioGroup
+            android:id="@+id/rg_reason"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:padding="20dp" >
+
+            <RadioButton
+                android:id="@+id/rb_11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/selector_tousu_choose"
+                android:button="@null"
+                android:padding="10dp"
+                android:text="色情低俗"
+                android:drawablePadding="15dp"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#e7e7e7"/>
+
+            <RadioButton
+                android:id="@+id/rb_12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/selector_tousu_choose"
+                android:button="@null"
+                android:padding="10dp"
+                android:drawablePadding="15dp"
+                android:text="广告骚扰"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+
+            <View 
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#e7e7e7"/>
+            
+            <RadioButton
+                android:id="@+id/rb_13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:drawableLeft="@drawable/selector_tousu_choose"
+                android:button="@null"
+                android:padding="10dp"
+                android:drawablePadding="15dp"
+                android:text="违法 (政治，造谣，暴力等)"
+                android:textColor="#292929"
+                android:textSize="18sp" />
+            
+			<View 
+                android:layout_width="match_parent"
+                android:layout_height="0.8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:background="#e7e7e7"/>
+            
+        </RadioGroup>
+    </RelativeLayout>
+
+</RelativeLayout>

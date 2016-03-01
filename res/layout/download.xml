@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rpz_bg"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载中"
+            android:layout_gravity="center"
+            android:textColor="#31333a"
+            android:layout_marginTop="10dp"
+            android:textSize="18sp"/>
+
+        <ProgressBar
+            android:id="@+id/myProssBarhandle"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="10dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp" 
+            android:progressDrawable="@drawable/myprogress_style"/>
+
+        <TextView
+            android:id="@+id/myProssBarhandleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0%"
+            android:textColor="#b0b8bd"
+            android:textSize="12sp" 
+            android:layout_marginTop="8dp"
+            android:layout_gravity="center"/>
+        
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_marginTop="10dp"
+            android:background="#f0f3f3" />
+        
+        <Button
+            android:id="@+id/bt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="取消"
+            android:padding="10dp"
+            android:textColor="#8b8b8b"
+            android:textSize="22sp"
+            android:background="@drawable/selector_card_center" />
+    </LinearLayout>
+</LinearLayout>

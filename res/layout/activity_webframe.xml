@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAFAFA"
+    android:orientation="vertical" >
+
+    <!-- 标题栏 -->
+
+        <RelativeLayout
+            android:id="@id/top_bar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:background="@drawable/shape_top_bar"  >
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:onClick="onClick"
+                android:background="@drawable/title_btn_back" />
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_top" />
+            
+            <Button
+                android:id="@+id/bt_fx"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:visibility="gone"
+                android:background="@drawable/title_btn_share"
+                android:onClick="onClick" />
+        </RelativeLayout>
+
+    <!-- 信息主体 -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+        <com.hnmoma.driftbottle.custom.ProgressWebView 
+            android:layout_width="match_parent"
+        	android:layout_height="match_parent"
+        	android:scrollbars="none"
+        	android:id="@+id/wv"/>
+    </LinearLayout>
+</LinearLayout>

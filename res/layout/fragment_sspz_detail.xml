@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e3e3e3" >
+
+        <!-- 标题栏 -->
+
+        <RelativeLayout
+            android:id="@+id/view_top"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/height_top_bar"
+            android:background="@drawable/shape_top_bar" >
+
+            <Button
+                android:id="@+id/bt_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/title_btn_back" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/title_btn_share"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:text="瓶子详情"
+                android:textColor="@color/white"
+                android:textSize="@dimen/label_top" />
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/view_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true" >
+
+            <include layout="@layout/view_comment" />
+
+            <LinearLayout
+                android:id="@+id/menu_view"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="#ffffff"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <LinearLayout
+                    android:id="@+id/bt_dz"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/tv_dz"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/read_sc"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="点赞(0)"
+                        android:textColor="#666666"
+                        android:drawablePadding="3dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bt_pl"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                     android:descendantFocusability="blocksDescendants"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:id="@+id/tv_pl"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:drawableTop="@drawable/read_chat"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="评论(0)"
+                        android:textColor="#666666"
+                        android:drawablePadding="3dp"
+                        android:textSize="12sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bt_fx"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:visibility="gone"
+                     android:descendantFocusability="blocksDescendants"
+                    android:gravity="center" >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawableTop="@drawable/read_share"
+                        android:gravity="center"
+                        android:singleLine="true"
+                        android:text="分享"
+                        android:drawablePadding="3dp"
+                        android:textColor="#666666"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+
+        <!-- 信息主体 -->
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/view_center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/view_bottom"
+            android:layout_below="@id/view_top"
+            android:cacheColorHint="#00000000"
+            android:divider="@null"
+            android:fadingEdge="none"
+            android:focusable="false"
+            android:focusableInTouchMode="false"
+            android:listSelector="#00000000"
+            android:orientation="vertical"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:scrollbarSize="3dp"
+            android:scrollbarStyle="outsideOverlay"
+            android:scrollbarThumbVertical="@color/scrollbarbg" />
+    </RelativeLayout>
+
+</FrameLayout>

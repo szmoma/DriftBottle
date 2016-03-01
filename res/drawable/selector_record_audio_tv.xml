@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 重新录音按钮文字颜色的效果 -->
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <item  android:color="#999999"  android:state_focused="true"/>
+    <item  android:color="#999999"  android:state_pressed="true"/>
+    <item  android:color="#999999"  android:state_selected="true"/>
+    <item  android:color="@color/white"/>
+</selector>

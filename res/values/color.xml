@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<color name="bg">#fafafa</color> <!-- 背景 -->
+    <color name="scrollbarbg">#7f6c7274</color>
+    <color name="item_normal">#f4f4f4</color>
+    <color name="item_select">#eeeeee</color>
+    <color name="order_color">#f7bf2e</color>
+    <color name="white">#FFFFFF</color>
+    <color name="dialogTxtColor">#0048fc</color>
+    <color name="dialogColor">#f0ffffff</color> 
+    <color name="activitytalk_bg">#f8f8f8</color>
+    <color name="talkitem_bg_pic">#f2f2f2</color>
+    
+    <color name="username_normal">#333333</color>
+    <color name="username_vip">#f30d23</color>
+    <color name="bottlehead_name">#f74123</color>
+    <color name="kjpz_username">#fb5876</color>
+    <color name="bottlecontent_username">#9d7e6c</color>
+ <!-- 白色 -->
+    <color name="black">#000000</color>
+ <!-- 黑色 -->
+    <color name="transparent">#00000000</color>
+ <!-- 透明 -->
+    <color name="txmbg">#D6D3D6</color>
+ <!-- 灰白色 -->
+    <color name="qzs">#EFE7DE</color>
+ <!-- 浅棕色 -->
+    <color name="orange">#fff09609</color>
+    <color name="red">#ffe51400</color>
+    <color name="pink">#ffe671b8</color>
+    <color name="brown">#ffa05000</color>
+    <color name="lime">#ff8cbf26</color>
+    <color name="teal">#ff00aba9</color>
+    <color name="purple">#ffa200ff</color>
+    <color name="magenta">#ffff0097</color>
+    <color name="green">#ff339933</color>
+    <color name="gray">#ffe6e6e6</color>
+    <color name="background">#ffffffff</color>
+    <color name="gray_dark">#ff919191</color>
+    <color name="sc">#f1f6f8</color>
+    <color name="dl">#47A5CD</color>
+    <color name="dz_press">#16acf8</color>
+ <!-- 淡蓝色 -->
+    <color name="mybottle_listitem_s">#F2F2F2</color>
+ <!-- mybottle_listitem_s -->
+    <color name="bluepb">#3096e5</color>
+    <color name="load_more_normal_color">@color/transparent</color>
+    <color name="load_more_press_color">@color/holo_blue</color>
+    <color name="holo_blue">#E4E4E4</color>
+    <color name="common_bg">#fcfcfc</color>
+    <color name="top_bar_normal_bg">#4ebcd3</color>
+    <color name="error_item_color">#F6EBE6</color>
+    <color name="gray_normal">#666667</color>
+    <color name="grid_state_pressed">#1Affffff</color>
+    <color name="grid_state_focused">#80000000</color>
+	<color name="circle_color">#323a45</color>
+    <color name="ring_color">#14b9d6</color>
+    
+    <color name="btn_gray_pressed_status">#b5b5b6</color>
+    <color name="btn_gray_pressed">#666667</color>
+    <color name="btn_blue_normal">#1e90ff</color>
+    <color name="btn_blue_pressed">#0066FF</color>
+    <color name="btn_gray_normal">#c0c0c0</color>
+    
+    <color name="group_item_bg">#F3F3F3</color>
+    <color name="group_item_pressed_bg">#E5E5E5</color>
+    <color name="child_item_bg">#E5E5E5</color>
+    <color name="child_item_diveder">#D6D6D5</color>
+    <color name="list_item_text_pressed_bg">#FF822E</color>
+    <color name="tab_text_color">#787878</color>
+    <color name="tab_text_pressed_color">#CD0000</color>
+    
+    <drawable name="trans">@color/transparent</drawable>
+    <color name="login_bg">#efefef</color>
+    <color name="login_btn_noraml">#4fc1fb</color>
+    <color name="login_btn_press">#1dadf6</color>
+    <color name="top_bar_center">#16aef9</color>
+    <color name="top_bar_start">#16aef6</color>
+    <color name="top_bar_end">#16aefc</color>
+    <color name="label_setting">#666666</color>
+    <color name="line_grey">#efefef</color>
+    <color name="et_hint">#999999</color>
+    
+    <!-- 空间邂逅瓶子头像为空时的颜色设置 -->
+    <color name="vzonebottle_head_null">#666666</color>
+    <!-- 任务瓶子任务完成 -->
+    <color name="rwpz_complete">#999999</color>
+    
+    <color name="concern_bottom_normal">#666666</color>
+    <color name="concern_bottom_press">#999999</color>
+    <color name="concern_bg_press">#f0f0f0</color>
+    
+    <color name="msg_sayhello">#40c6e9</color>
+    <color name="msg_game">#f48d48</color>
+    <color name="msg_gift">#e750b1</color>
+    <color name="msg_system_notice">#e05a59</color>
+    <color name="ltpz_notalk">#999999</color>
+</resources>

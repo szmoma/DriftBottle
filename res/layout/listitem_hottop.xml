@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <LinearLayout
+        android:id="@+id/ll_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="@drawable/hottop_bg"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tv_topname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawablePadding="10dp"
+                android:gravity="center_vertical"
+                android:textColor="#666666"
+                android:textSize="19sp" />
+            
+            <RelativeLayout 
+                android:id="@+id/rl_more"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="onClick"
+                android:padding="10dp" >
+	            <ImageView 
+	                android:id="@+id/iv_more"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:layout_alignParentRight="true"
+	                android:layout_marginRight="10dp"
+	                android:layout_centerVertical="true"
+	                android:background="@drawable/hottop_more"
+	                />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_01"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp" >
+
+                <ImageView
+                    android:id="@+id/iv_01"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" 
+                    android:onClick="onClick"/>
+
+                <TextView
+                    android:id="@+id/tvbg_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/bighead_number"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="3dp"
+                    android:text="1"
+                    android:textColor="#ffffff"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/tvname_01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_01"
+                    android:layout_marginLeft="6dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/m_new"
+                    android:maxLength="8"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="16sp" />
+                
+                <ImageView
+                    android:id="@+id/iv_vip01"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ic_vip"
+                    android:layout_toRightOf="@id/tvname_01"
+                    android:layout_below="@id/iv_01"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="5dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_02"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rl_01" >
+
+                <ImageView
+                    android:id="@+id/iv_02"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tvbg_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/headbg_number_r"
+                    android:paddingLeft="3dp"
+                    android:text="2"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvname_02"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_02"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/m_new"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+                
+                <ImageView
+                    android:id="@+id/iv_vip02"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ic_vip"
+                    android:layout_toRightOf="@id/tvname_02"
+                    android:layout_below="@id/iv_02"
+                    android:layout_marginTop="3dp"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_03"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rl_02" >
+
+                <ImageView
+                    android:id="@+id/iv_03"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tvbg_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/headbg_number_r"
+                    android:paddingLeft="3dp"
+                    android:text="3"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvname_03"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_03"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/m_new"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+                
+                 <ImageView
+                    android:id="@+id/iv_vip03"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ic_vip"
+                    android:layout_toRightOf="@id/tvname_03"
+                    android:layout_below="@id/iv_03"
+                    android:layout_marginTop="3dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_04"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_02"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rl_01" >
+
+                <ImageView
+                    android:id="@+id/iv_04"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tvbg_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/headbg_number_g"
+                    android:paddingLeft="3dp"
+                    android:text="4"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvname_04"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_04"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/m_new"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+                
+                 <ImageView
+                    android:id="@+id/iv_vip04"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ic_vip"
+                    android:layout_toRightOf="@id/tvname_04"
+                    android:layout_below="@id/iv_04"
+                    android:layout_marginTop="3dp"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_05"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_below="@id/rl_03"
+                android:layout_margin="5dp"
+                android:layout_toRightOf="@id/rl_04" >
+
+                <ImageView
+                    android:id="@+id/iv_05"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:onClick="onClick"
+                    android:adjustViewBounds="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tvbg_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/headbg_number_g"
+                    android:paddingLeft="3dp"
+                    android:text="5"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tvname_05"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/iv_05"
+                    android:layout_marginLeft="5dp"
+                    android:drawablePadding="5dp"
+                    android:drawableRight="@drawable/m_new"
+                    android:maxLength="3"
+                    android:singleLine="true"
+                    android:textColor="#333333"
+                    android:textSize="12sp" />
+                
+                 <ImageView
+                    android:id="@+id/iv_vip05"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:background="@drawable/ic_vip"
+                    android:layout_toRightOf="@id/tvname_05"
+                    android:layout_below="@id/iv_05"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="3dp"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

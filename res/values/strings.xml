@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">漂流瓶子</string>
+    <integer name="app_version_code">1</integer>
+    <string name="app_version">1.0.0</string>
+	<string name="WXAPP_ID">wxa9839b678a2dd992</string>
+	
+    <string name="friend_discard_bottle">扔一个</string>
+    <string name="friend_collect_bottle">捡一个</string>
+    <string name="friend_my_bottle">我的瓶子</string>
+    
+    <string name="set_lockscreen">手势密码</string>
+    <string name="set_tjpy">推荐朋友</string>
+    <string name="set_yjfk">联系客服</string>
+    <string name="set_wxzc">五星好评</string>
+    <string name="set_jcgx">检查更新</string>
+    <string name="set_dqbb">当前版本</string>
+    <string name="set_wxhp">万千表情总是情，给个好评行不行 </string>
+    <string name="set_bzsm">帮助说明 </string>
+    <string name="set_bzsm_desc">常见问题及帮助说明 </string>
+    
+    <string name="share">好友分享</string>
+    <string name="tjcontent">推荐一个好玩的应用给你：漂流瓶子-开盖有奖，瓶瓶惊喜.下载地址：http://www.52plp.com</string>
+    
+    <string name="set_dl">登录</string>
+    
+    <string name="noupdate">没有更新</string>
+    <string name="timeout">超时</string>
+    <string name="nowifi">没有wifi，只有在wifi下更新</string>
+    
+    <string name="sm_item_fl_weibo">关注官方微博</string>
+    <string name="sm_item_fl_tc">关注官方微博</string>
+    
+    <string name="delete_message">删除消息</string>
+    <string name="location_recv">[%1$s的位置]</string>
+    <string name="location_message">位置信息</string>
+    <string name="recording_video">录制视频</string>
+    <string name="location_prefix">[我的位置]</string>
+    <string name="voice">[语音]</string>
+    <string name="picture">[图片]</string>
+    <string name="video">[视频]</string>
+    <string name="file">[文件]</string>
+    <string name="voice_call">[语音通话]</string>
+    <string name="button_pushtotalk">按住说话</string>
+    <string name="button_send">发送</string>
+    <string name="attach_take_pic">拍照</string>
+    <string name="attach_picture">图片</string>
+    <string name="attach_location">位置</string>
+    <string name="attach_file">文件</string>
+    <string name="attach_gift">礼物</string>
+    <string name="attach_game">划拳</string>
+    <string name="move_up_to_cancel">手指上滑，取消发送</string>
+    <string name="recoding_fail">录音失败，请重试！</string>
+    <string name="release_to_cancel">松开手指，取消发送</string>
+    <string name="text_ack_msg">已读</string>
+     <string name="text_delivered_msg">送达</string>
+     <string name="confirm_resend">确认重发该信息？</string>
+     <string name="resend">重发</string>
+     <string name="send_fail">发送消息失败,</string>
+     <string name="connect_failuer_toast">请检查网络或稍候重试</string>
+    <string name="prompt">提示</string>
+    <string name="copy_message">复制消息</string>
+    <string name="forward">转发</string>
+    <string name="delete">删除</string>
+    <string name="delete_voice">删除语音</string>
+    <string name="delete_video">删除视频</string>
+    
+    <string name="tip_unlogin">客官别急，先登录再玩吧~</string> 
+    <string name="pointMessage">提示信息</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">确定</string>
+    
+    <string name="connect_conflict">同一帐号已在其他设备登录</string>
+    
+    <string name="register">注册</string> 
+    <string name="login">登录</string>
+    <string name="go_register">注册新用户</string>
+    <string name="go_union">使用第三方快速登录</string>
+    <string name="union_qq">QQ登录</string>
+    <string name="union_sina">微博登录</string>
+    <string name="union_rr">人人登录</string>
+    <string name="union_wechat">微信登录</string>
+         
+    <string name="email">登录账号：</string> 
+    <string name="pwd">登录密码：</string> 
+    <string name="hint_verification">输入6位数字验证码</string>
+    <string name="confirm_pwd">确认密码</string> 
+    <string name="hint_email">请输入登录邮箱</string> 
+    <string name="hint_phone">请您输入电话号码</string>
+    <string name="hint_pwd">请输入登录密码</string> 
+    <string name="hint_nikcname">请输入昵称</string> 
+    <string name="next_step">下一步</string> 
+    <string name="tv_sex">性别</string> 
+    <string name="tip_selector_sex">请选择性别</string>
+    <string name="tip_click_head">点击上传头像</string>
+    <string name="tip_sex">性别选择后不允许修改，请谨慎选择</string> 
+    <string name="spiner_sex">请选择性别</string> 
+    <string name="tv_addr">常驻地</string> 
+    <string name="tip_addr">填写常驻地，可以让同城的朋友更容易找到你</string> 
+    <string name="tv_birthday">出生日期</string> 
+    <string name="tip_birthday">出生日期只会计算年龄和星座，不会显示在个人资料中</string> 
+    <string name="tip_select_birthday">请选择出生日期</string>
+    <string name="finish">完成</string> 
+    <string name="addUserInfo">完善资料</string> 
+    <string name="uploadHead">点击上传头像</string> 
+    <string name="province">省</string> 
+    <string name="city">市</string>
+    
+    <string name="tip_add_userinfo">放弃完善用户信息?</string>
+    <string name="tip_input_charm_value">请输入魅力值！</string>
+    <string name="tip_warm_charm_value">您的魅力值不够！</string>
+    <string name="tip_error_charm_value">请输入正确的魅力值！</string>
+    <string name="tip_error_trainslate">魅力值转化失败</string>
+    
+    <string name="tip_gesture_local_start">开始绘制图案</string>
+    <string name="tip_gesture_local_clear">图案已清除</string>
+    <string name="tip_gesture_local_agin">请再次绘制解锁图案</string>
+    <string name="tip_gesture_localed">确认保存新解锁图案</string> 
+    <string name="tip_gesture_error">与上次输入不一致，请重试</string>
+    <string name="tip_gesture_local_reset">重绘</string>
+    <string name="tip_gesture_local_ok">保存</string>
+    <string name="tip_gesture_local_head">"绘制解锁图案"</string>
+    <string name="tip_gesture_local_unforget">忘记密码？</string>
+    
+    <string name="tip_trainslate_title">领礼券</string>
+    <string name="ok_trainslate">确认兑换</string>
+    <string name="tip_hint_translate">请输入兑换数量，1魅力值兑换1礼券</string>
+    <string name="tip_charm_not_enough">礼券不足，快用魅力值换取吧~</string>
+    <string name="write_order">兑换信息</string>
+    <string name="real_name">姓名:</string>
+    <string name="hint_real_name">真实姓名（必填）</string>
+    <string name="tel">电话:</string>
+    <string name="hint_tel">个人电话（必填）</string>
+    <string name="tv_addr_send">地址: </string>
+    <string name="tip_addr_send">请填写详细的有效地址</string>
+    <string name="tip_oper">充值卡一旦兑换不可退换，请认真勾选</string>
+    <string name="tv_mobile">移动</string>
+    <string name="tv_unicom">联通</string>
+    <string name="tv_telecom">电信</string>
+    <string name="ask_title">提示</string>
+    <string name="real_shop">礼品将于两周内根据您所填写的信息寄送，确定提交？</string>
+    <string name="virtual_shop">充值卡卡号密码将于5个工作日内，通过系统消息发至您的漂流瓶子账号，请密切留意。</string>
+	
+    <string name="ask_error_title">提示</string>
+    <string name="ask_error_name">真实姓名不能为空</string> 
+    <string name="ask_error_tel">电话不能为空</string> 
+    <string name="ask_error_addr">地址不能为空</string> 
+    <string name="ask_submit">确认兑换？</string>
+    <string name="tip_order">礼品一旦兑换不可退换，请认真填写信息。</string>
+    <string name="submit">提交</string>
+    <string name="reWrite">返回重写</string>
+    <string name="tv_charm_Mall">魅力商城</string>
+    <string name="tv_my_coupons">我的礼券:  </string>
+    <string name="tv_translatable_charm">可兑换魅力值:</string>
+    <string name="tv_myGift">我的礼品</string>
+    <string name="tv_converting">兑换中...</string>
+    <string name="tv_converted">兑换成功</string>
+    <string name="tv_convert_failure">订单处理失败...</string>
+    
+    <string name="tv_personal">个人资料</string>
+    <string name="tv_edit_personal">编辑资料</string>
+    <string name="tv_tip_send">打招呼没反应？ 快去送点礼物吧！</string>
+    <string name="tv_myzone">我的空间</string>
+    <string name="tv_album">相册</string>
+    <string name="tv_myAlbum">我的相册</string>
+    <string name="tip_album">你的相册空间已满</string>
+    <string name="upload_photo">上传图片</string>
+    
+    <string name="unlogin_msg">客官别急，先登录再玩吧~</string>
+    <string name="firstthrow">干得漂亮！扔出了今天的第一个瓶子，奖励50扇贝</string>
+    <string name="throw_gap_tip">骚年手速太快了，等会儿再扔吧~</string>
+    <string name="comment_gap_tip">骚年手速太快了，等会儿再评论吧~</string>
+    
+    <string name="click_exit_agin">再按一次退出</string>
+    <string name="more">更多</string>
+    <string name="send_gift">送礼物</string>
+    <string name="say_hello">打招呼</string>
+    <string name="mark_person">标记</string>
+    <string name="my_zone">个人空间</string>
+    <string name="myselft">我的</string>
+    <string name="report">举报</string>
+    <string name="more_choice">更多选择</string>
+	<string name="blacklist">黑名单</string>
+	 <string name="Is_moved_into_blacklist">正在移入黑名单...</string>
+	 <string name="Move_into_blacklist_success">移入黑名单成功</string>
+    <string name="Move_into_blacklist_failure">移入黑名单失败</string>
+    
+	<string name="talk_msg_title">动态</string>
+	
+	<string name="not_throw_bottle">小瓶子受不了了，休息会再扔吧</string>
+	<string name="talk_bottle">说说瓶</string>
+	<string name="general_bottle">聊天瓶</string>
+	<string name="guessing_game_bottle">划拳瓶</string>
+	<string name="blasting_bottle">爆破瓶</string>
+	<string name="comment_bottle">评论瓶</string>
+	<string name="common_bottle">普通瓶</string>
+	<string name="rpz_blasting_bottle">爆破瓶(VIP)</string>
+	
+	<string name="tip_hint_talk_bottle">想对捡到瓶子的Ta说点什么？说说瓶将会同步到我的空间，还可以让瓶友们盖楼评论哦~</string>
+	<string name="tip_bottol_dialog_audio">已添加语音附件，是否移除该语音添加图片附件？</string>
+	<string name="tip_bottol_dialog_image">已添加图片附件，是否移除该图片添加语音附件？</string>
+	<string name="tip_pick_bottle">您未登录，登录后才能捡更多瓶子哦</string>
+	<string name="audio_loading">正在下载语音，稍后点击</string>
+	<string name="audio_miss">音频文件不存在</string>
+	<string name="tip_answer">答案：分享后显示答案</string>
+	
+	<string name="tip_no_Talks">duang~还没有扔过瓶子哦</string>
+	<string name="tip_no_new">duang~没有新动态</string>
+	<string name="tip_no_message">duang~没有消息</string>
+	<string name="tip_no_gift">竟然没有礼物，一定是我眼花了</string>
+	<string name="tip_no_props">还没有道具心空空的，快去道具商城选购吧</string>
+	<string name="tip_no_visitor">duang~还没有人来看过哦</string>
+	<string name="tip_no_send_gift">从不送礼的理由是：节俭是一种美德</string>
+	<string name="tip_no_album">duang~还没有上传照片到相册哦</string>
+	<string name="tip_no_exchange_gift">duang~还没有兑换过礼品哦</string>
+	<string name="tip_no_thank_gift">没有未答谢的礼物</string>
+
+	<string name="tip_no_concernman">当前还没有标记的人哦~</string>
+	<string name="talk">说说</string>
+	<string name="talk_write">写说说</string>
+	<string name="announce">发表</string>
+	<string name="tip_talk">想对大家说点什么？说说瓶除了在我的空间展示，也会让瓶友们捡到，盖楼评论哦~</string>
+	<string name="main_message">消息</string>
+	<string name="main_throw">扔一个</string>
+	<string name="main_mybottle">我的瓶子</string>
+	<string name="main_setting">设置</string>
+	<string name="exit_login">退出登录</string>
+	<string name="mybottle">我的瓶子</string>
+	
+	<string name="recommended">精品推荐</string>
+	<string name="publication">发表</string>
+	<string name="add_photo">添加照片</string>
+	<string name="attch_image">图片附件</string>
+	<string name="rank_week">周榜</string>
+	<string name="rank_total">总榜</string>
+	<string name="attach_audio">语音附件</string>
+	<string name="long_press_record_audio">长按录音</string>
+	<string name="reset_record_audio">重录</string>
+	<string name="tip_general_talk">想对捡到瓶子的Ta说点什么？</string>
+	<string name="tip_blast_bottle">瓶子被打开3秒后就会爆炸哦！来点让Ta看不完的劲爆内容吧！想想都有点小激动呢~</string>
+	<string name="warm_blast_bottle">瓶子打开3秒后爆炸</string>
+	<string name="downloading">下载中...</string>
+	<string name="charm_shop">魅力商城</string>
+	<string name="visitor">访客</string>
+	<string name="sspz_title">说说瓶</string>
+	<string name="tip_update_version">已经是最新版本咯~</string>
+	<string name="tip_rember_pwd">密码设置成功，请记住密码。</string>
+	<string name="grade_detail">等级详情</string>
+	
+	<string name="not_install_wechat">请安装微信</string>
+	<string name="no_sign">鲜肉很懒，没留下任何东西</string>
+	<string name="no_sign_myselft">填写签名</string>
+	<string name="wechat_login_failure">微信登陆失败</string>
+	<string name="no_support_group">群聊不支持送礼物</string>
+	<string name="blacklist_sucessed">移入黑名单成功</string>
+	<string name="blacklist_failure">移入黑名单失败</string>
+	<string name="not_found_pic">找不到图片</string>
+	<string name="not_support_property">不支持送道具</string>
+	<string name="error_platform">系统错误</string>
+	<string name="error_num">礼品数量不低于1</string>
+	<string name="playing_game">游戏挑战</string>
+	<string name="gift">礼物</string>
+	
+	<string name="activity_concern_title">标记</string>
+	<string name="jubao_reason">请选择举报原因</string>
+	
+	<string name="my_wallet">我的钱包</string>
+	<string name="wallet_task" >赏金任务</string>
+	<string name="vip">开通VIP</string>
+	<string name="recharge">立即充值</string>
+	
+	<string name="hidden_photo">违规图片，已屏蔽，请删除</string>
+	<string name="warm_photo">正在审核...</string>
+	<string name="delete_photo">删除相片</string>
+	<string name="save_photo">保存相片</string>
+	<string name="personInfo">个人资料</string>
+	<string name="game">邂逅猜拳</string>
+	<string name="defend">我的守护</string>
+	<string name="shop">道具商城</string>
+	<string name="setttings">设置</string>
+	<string name="home">主页</string>
+	<string name="centre_person">个人中心</string>
+	<string name="empty_album_my">暂无图片，点击添加图片</string>
+	<string name="empty_album">暂无图片</string>
+	<string name="empty_gift">暂无礼物</string>
+	<string name="vip_introduce">开通会员</string>
+	<string name="vip_buy">购买会员</string>
+	<string name="vip_title_one">一、尊贵皇冠标记 闪耀红色昵称</string>
+	<string name="vip_desc_one">扔出的瓶子、发布的评论、个人空间...皇冠加红红的昵称永远Bling Bling哒!</string>
+	<string name="vip_title_two">二、双倍升级速度 玩的就是心跳</string>
+	<string name="vip_desc_two">每项加分X2,每日加分上限X2,升级快如闪电</string>
+	<string name="vip_title_three">三、标记无限制 痛快聊不停</string>
+	<string name="vip_desc_three">可标记瓶友打破10人上限,任性聊,任性约</string>
+	<string name="vip_title_four">四、会员独享漂流瓶</string>
+	<string name="vip_desc_four">更丰富的瓶子类型,更酷炫的瓶子样式</string>
+	<string name="vip_title_five">五、相册容量扩充至50张</string>
+	<string name="vip_desc_five">空间可上传照片数量扩充至50张</string>
+	<string name="vip_title_six">六、访客记录可扩充至50人</string>
+	<string name="vip_desc_six">访客记录可扩充至50人,我的地盘我是地主</string>
+	<string name="vip_title_seven">七、瓶友沙滩无限捞</string>
+	<string name="vip_desc_seven">到瓶友沙滩,可捞无限个Ta的瓶子.捡瓶子根本停不下来</string>
+	<string name="vip_state_on">开通</string>
+	<string name="vip_state_off">未开通</string>
+	<string name="charm">魅力值</string>
+	<string name="wealth">财富值</string>
+	<string name="love">爱心数</string>
+	<string name="game_vs">猜拳(胜/负/平)</string>
+	<string name="level_detail">等级详情</string>
+	<string name="no_game_result">没有游戏战绩</string>
+	<string name="fans">粉丝</string>
+</resources>

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll_first"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99000000"
+        android:gravity="center" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="25dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/card_top"
+                android:gravity="center"
+                android:padding="8dp"
+                android:singleLine="true"
+                android:text="爆破瓶"
+                android:textColor="#545454"
+                android:textSize="20sp" />
+
+            <FrameLayout
+                android:id="@+id/ll_center"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:background="@drawable/card_center" >
+
+                <LinearLayout
+                    android:id="@+id/view_one"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:scaleType="fitXY"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/card_jf_bg" 
+                        android:paddingLeft="-5dp"
+                        android:paddingRight="-5dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="8dp" >
+
+                        <com.hnmoma.driftbottle.custom.CircularImage
+                            android:id="@+id/iv_head"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:adjustViewBounds="true"
+                            android:layout_gravity="left|center_vertical"
+                            android:layout_marginRight="20dp" />
+
+                        <TextView
+                            android:id="@+id/tv_baoza"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center"
+                            android:text="@string/warm_blast_bottle"
+                            android:textColor="#666666"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/view_two"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:visibility="gone" >
+
+                    <include layout="@layout/view_bottlehead" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.5dp"
+                        android:background="#f0f3f3" />
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <FrameLayout
+                            android:id="@+id/cnt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" >
+
+                            <FrameLayout
+                                android:id="@+id/view_tw"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:visibility="gone" >
+
+                                <ImageView
+                                    android:id="@+id/iv_pic"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:scaleType="centerCrop"
+                                    android:src="@drawable/card_def" />
+
+                                <TextView
+                                    android:id="@+id/tv_desc"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="bottom"
+                                    android:background="@drawable/card_desc_bg"
+                                    android:gravity="bottom"
+                                    android:lineSpacingExtra="3dp"
+                                    android:maxLines="3"
+                                    android:padding="2dp"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp" />
+                            </FrameLayout>
+
+                            <TextView
+                                android:id="@+id/view_wen"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:lineSpacingExtra="3dp"
+                                android:padding="5dp"
+                                android:scrollbarSize="3dp"
+                                android:scrollbarStyle="outsideOverlay"
+                                android:scrollbarThumbVertical="@color/scrollbarbg"
+                                android:scrollbars="vertical"
+                                android:text="机会只有一次把握住了就成功了，没把握住又需要很长时间的准"
+                                android:textColor="#666666"
+                                android:textIsSelectable="true"
+                                android:textSize="16sp"
+                                android:visibility="visible" />
+                        </FrameLayout>
+
+                        <FrameLayout
+                            android:id="@+id/cover"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="#ffffff"
+                            android:visibility="gone" >
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_gravity="top|center_horizontal"
+                                android:background="@drawable/card_lie" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:lineSpacingExtra="3dp"
+                                android:text="瓶子已破碎，看完了吗？"
+                                android:textColor="#d6d6d8"
+                                android:textSize="16sp" />
+                        </FrameLayout>
+                    </FrameLayout>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/tv_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="5"
+                    android:textColor="#dae9e3"
+                    android:textSize="182sp"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="#f0f3f3" />
+
+            <LinearLayout
+                android:id="@+id/ll_bottom"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/card_bottom"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/bt_left"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_left"
+                    android:padding="10dp"
+                    android:text="扔掉"
+                    android:textColor="#8b8b8b"
+                    android:textSize="19sp" />
+
+                <View
+                    android:layout_width="0.7dp"
+                    android:layout_height="match_parent"
+                    android:background="#d9d9d9" />
+
+                <Button
+                    android:id="@+id/bt_right"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/card_right"
+                    android:padding="10dp"
+                    android:text="打开"
+                    android:textColor="#0daef2"
+                    android:textSize="19sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_throw"
+        android:visibility="gone" />
+
+</LinearLayout>

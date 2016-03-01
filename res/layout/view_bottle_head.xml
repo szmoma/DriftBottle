@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_bottle_head"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="horizontal" >
+
+    <com.hnmoma.driftbottle.custom.CircularImage
+        android:id="@+id/iv_userhead"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="10dp"
+        android:adjustViewBounds="true"
+        android:onClick="onClick" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxEms="10"
+                android:paddingRight="3dp"
+                android:paddingTop="3dp"
+                android:paddingBottom="3dp"             
+                android:singleLine="true"
+                android:textColor="#9d7e6c"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@id/iv_vip"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="4dp"
+                android:layout_toRightOf="@id/tv_name"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside" />
+
+            <TextView
+                android:id="@+id/tv_dq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginLeft="8dp"
+                android:drawableLeft="@drawable/adr"
+                android:gravity="right"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:textColor="#95a2a9"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/tv_sf"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dp"
+                android:background="@drawable/manbg"
+                android:drawableLeft="@drawable/icon_male_32"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:padding="3dp"
+                android:singleLine="true"
+                android:text="20"
+                android:textColor="@color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@id/tv_sf"
+                android:gravity="center_vertical"
+                android:padding="2dp"
+                android:singleLine="true"
+                android:textColor="#afb1b1"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

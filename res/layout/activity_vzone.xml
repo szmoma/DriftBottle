@@ -1,0 +1,645 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.hnmoma.driftbottle"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f8f8f8" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <!-- 底部 -->
+
+        <LinearLayout
+            android:id="@+id/ll_bt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingBottom="10dp"
+            android:visibility="visible" >
+
+            <LinearLayout
+                android:id="@+id/ll_chat"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_chat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/selector_btn_say" />
+
+                <TextView
+                    android:id="@+id/tv_chat"
+                    style="@style/tv_vzone_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="-8dp"
+                    android:text="@string/say_hello" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_mark"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_mark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/selector_btn_mark_person" />
+
+                <TextView
+                    android:id="@+id/tv_mark"
+                    style="@style/tv_vzone_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="-8dp"
+                    android:text="@string/mark_person" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_sl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_sl"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/selector_btn_send_gift" />
+
+                <TextView
+                    android:id="@+id/tv_sl"
+                    style="@style/tv_vzone_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="-8dp"
+                    android:text="@string/send_gift" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_more"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="8dp"
+                android:layout_weight="1"
+                android:gravity="center_horizontal|bottom"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_more"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:minHeight="40dp"
+                    android:minWidth="40dp"
+                    android:scaleType="centerInside"
+                    android:src="@drawable/selector_btn_more" />
+
+                <TextView
+                    android:id="@+id/tv_more"
+                    style="@style/tv_vzone_bottom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom"
+                    android:layout_marginTop="-8dp"
+                    android:text="@string/more" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.hnmoma.driftbottle.custom.DampView
+            android:id="@+id/dampview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/ll_bt"
+            android:fadingEdge="none"
+            android:overScrollMode="never"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:id="@+id/rl_02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible" >
+
+                    <!-- 默认背景 -->
+ 					<!--此处必须设置imageview的scaleType为centerCrop,当然在代码中设置也可以-->
+                    <ImageView
+                        android:id="@+id/iv_background"
+                        android:layout_width="match_parent"
+                        android:layout_height="290dp"
+                        android:background="@color/transparent"
+                        android:src="@drawable/image"
+                        android:scaleType="centerCrop" />
+
+                    <!-- 头像和名称 -->
+
+                    <RelativeLayout
+                        android:id="@+id/userinfo"
+                        android:layout_width="match_parent"
+                        android:layout_height="96dp"
+                        android:layout_gravity="bottom"
+                        android:descendantFocusability="blocksDescendants" >
+
+                        <View
+                            android:id="@+id/back_space"
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_alignParentBottom="true"
+                            android:background="#3c858686" />
+
+                        <com.hnmoma.driftbottle.custom.CircularImage
+                            android:id="@+id/iv_head"
+                            android:layout_width="64dp"
+                            android:layout_height="64dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginLeft="8dp"
+                            android:adjustViewBounds="true"
+                            android:onClick="onClick"
+                            android:scaleType="centerCrop"
+                            android:visibility="visible" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="60dp"
+                            android:layout_alignBottom="@id/back_space"
+                            android:layout_centerVertical="true"
+                            android:layout_toRightOf="@id/iv_head"
+                            android:gravity="center_vertical"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tv_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_vertical"
+                                android:singleLine="true"
+                                android:textSize="18sp"
+                                android:visibility="gone" />
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="0dp"
+                                android:layout_marginBottom="8dp"
+                                android:layout_marginTop="8dp"
+                                android:layout_weight="1.0"
+                                android:gravity="center_vertical" >
+
+                                <ImageView
+                                    android:id="@id/iv_vip"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:layout_alignParentLeft="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:gravity="center_vertical"
+                                    android:padding="2dp"
+                                    android:scaleType="centerCrop" />
+
+                                <TextView
+                                    android:id="@id/tv_age"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_toRightOf="@id/iv_vip"
+                                    android:drawablePadding="3dp"
+                                    android:gravity="center_vertical"
+                                    android:padding="2dp"
+                                    android:singleLine="true"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_coll"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_toRightOf="@id/tv_age"
+                                    android:gravity="center_vertical"
+                                    android:padding="2dp"
+                                    android:singleLine="true"
+                                    android:textColor="#ffffff"
+                                    android:textSize="14sp"
+                                    android:textStyle="bold" />
+
+                                <TextView
+                                    android:id="@+id/tv_dq"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="8dp"
+                                    android:layout_marginRight="8dp"
+                                    android:layout_toRightOf="@id/tv_coll"
+                                    android:drawableLeft="@drawable/adr"
+                                    android:drawablePadding="0dp"
+                                    android:ellipsize="end"
+                                    android:gravity="center_vertical"
+                                    android:singleLine="true"
+                                    android:textColor="#ffffff"
+                                    android:textSize="12sp"
+                                    android:visibility="gone" />
+                            </RelativeLayout>
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <!-- 去沙滩 -->
+
+                    <ImageView
+                        android:id="@id/iv_beach"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:layout_marginBottom="72dp"
+                        android:layout_marginRight="8dp"
+                        android:src="@drawable/selector_btn_beach" />
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/rectangle3"
+                    android:orientation="vertical"
+                    android:visibility="visible" >
+
+                    <RelativeLayout
+                        android:id="@id/rl_sign"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:layout_marginLeft="8dp"
+                        android:descendantFocusability="blocksDescendants"
+                        android:gravity="center" >
+
+                        <ImageView
+                            android:id="@id/iv_sign"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_margin="4dp"
+                            android:minHeight="32dp"
+                            android:minWidth="32dp"
+                            android:padding="2dp"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/pencil" />
+
+                        <EditText
+                            android:id="@id/tv_sign"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_toRightOf="@id/iv_sign"
+                            android:background="@color/transparent"
+                            android:maxLines="3"
+                            android:padding="1dp"
+                            android:textColor="@color/label_setting"
+                            android:textSize="16sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@id/ll_exp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle3"
+                    android:descendantFocusability="blocksDescendants"
+                    android:orientation="vertical"
+                    android:padding="4dp"
+                    android:paddingTop="4dp" >
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="8dp"
+                        android:clickable="true"
+                        android:descendantFocusability="blocksDescendants"
+                        android:gravity="center" >
+
+                        <TextView
+                            android:id="@id/tv_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:textColor="@color/label_setting"
+                            android:textSize="@dimen/label_setting" />
+
+                        <com.hnmoma.driftbottle.custom.PropsTextProgressBar
+                            android:id="@id/pb_exp"
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="12dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="8dp"
+                            android:layout_toRightOf="@id/tv_level"
+                            android:gravity="center"
+                            android:progressDrawable="@drawable/progress_grade_bg"
+                            android_custom:textColor="#ff8030" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/line_grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <RelativeLayout
+                            android:id="@id/rl_fans"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:padding="2dp" >
+
+                            <ImageView
+                                android:id="@id/iv_fans"
+                                style="@style/iv_vzone_exp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_fans" />
+
+                            <TextView
+                                android:id="@id/tv_fans_label"
+                                style="@style/tv_vzone_exp_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/iv_fans"
+                                android:text="@string/fans" />
+
+                            <TextView
+                                android:id="@id/tv_fans"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_fans_label"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toRightOf="@id/iv_fans"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textColor="#63d2fa"
+                                android:textSize="@dimen/label_setting" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.8dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@id/rl_charm"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:padding="2dp" >
+
+                            <ImageView
+                                android:id="@id/iv_charm"
+                                style="@style/iv_vzone_exp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_charm" />
+
+                            <TextView
+                                android:id="@id/tv_charm_label"
+                                style="@style/tv_vzone_exp_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/iv_charm"
+                                android:text="@string/charm" />
+
+                            <TextView
+                                android:id="@id/tv_charm"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_charm_label"
+                                android:layout_centerInParent="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toRightOf="@id/iv_charm"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textColor="#fc8354"
+                                android:textSize="@dimen/label_setting" />
+                        </RelativeLayout>
+
+                        <View
+                            android:layout_width="0.8dp"
+                            android:layout_height="match_parent"
+                            android:background="@color/line_grey" />
+
+                        <RelativeLayout
+                            android:id="@id/rl_love"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_margin="4dp"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:descendantFocusability="blocksDescendants"
+                            android:gravity="center"
+                            android:padding="2dp" >
+
+                            <ImageView
+                                android:id="@id/iv_love"
+                                style="@style/iv_vzone_exp"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_love" />
+
+                            <TextView
+                                android:id="@id/tv_love_label"
+                                style="@style/tv_vzone_exp_label"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_toRightOf="@id/iv_love"
+                                android:text="@string/love" />
+
+                            <TextView
+                                android:id="@id/tv_love"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_below="@id/tv_love_label"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="4dp"
+                                android:layout_marginTop="2dp"
+                                android:layout_toRightOf="@id/iv_love"
+                                android:gravity="center"
+                                android:singleLine="true"
+                                android:textColor="#fa80c6"
+                                android:textSize="@dimen/label_setting" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle3"
+                    android:orientation="vertical"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:id="@id/tv_album"
+                        style="@style/tv_vzone_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/line_grey" />
+
+                    <com.hnmoma.driftbottle.custom.ExpandGridView
+                        android:id="@+id/wgv_album"
+                        style="@style/gv_vzone_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <TextView
+                        android:id="@id/tv_emty_album"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/rectangle3"
+                    android:orientation="vertical"
+                    android:paddingTop="4dp" >
+
+                    <TextView
+                        android:id="@id/tv_gift"
+                        style="@style/tv_vzone_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="0.8dp"
+                        android:background="@color/line_grey" />
+
+                    <com.hnmoma.driftbottle.custom.ExpandGridView
+                        android:id="@+id/wgv_gift"
+                        style="@style/gv_vzone_category"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="visible" />
+
+                    <TextView
+                        android:id="@id/tv_emty_gift"
+                        android:layout_width="match_parent"
+                        android:layout_height="64dp"
+                        android:gravity="center"
+                        android:visibility="gone" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.hnmoma.driftbottle.custom.DampView>
+    </RelativeLayout>
+
+    <!-- 头部 -->
+
+    <RelativeLayout
+        android:id="@id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/transparent" >
+
+        <Button
+            android:id="@id/btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/title_btn_back" />
+
+        <TextView
+            android:id="@id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:ellipsize="end"
+            android:maxEms="8"
+            android:singleLine="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/label_top" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/pb_progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        layout="@layout/dialog_loading"
+        android:visibility="gone" />
+
+</FrameLayout>
