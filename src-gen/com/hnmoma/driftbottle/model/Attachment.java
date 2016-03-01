@@ -6,6 +6,8 @@ package com.hnmoma.driftbottle.model;
  */
 public class Attachment implements java.io.Serializable {
 
+	
+	
     private Long id;
     private Integer attachmentType;
     private String attachmentUrl;
